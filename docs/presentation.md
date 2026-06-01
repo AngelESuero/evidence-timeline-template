@@ -27,3 +27,6 @@ An earlier `Code For XAI Timeline` draft established a useful editorial style:
 These are presentation choices, not evidence rules. A consuming website can use
 the generated JSON while preserving its own framework, accessibility patterns,
 and responsive behavior.
+
+See [`visual-reference-map.md`](visual-reference-map.md) for the verified direct
+reference, the recovered prototype, and the unresolved provenance note.
