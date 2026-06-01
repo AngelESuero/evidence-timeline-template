@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-06-01T21:38:55.640Z",
+  "timelines": [
+    {
+      "id": "openai-seed",
+      "title": "OpenAI: Public Milestones Seed Timeline",
+      "description": "A small official-source seed timeline. It is a starting point for reviewed expansion, not a comprehensive history.",
+      "updated": "2026-06-01",
+      "year_groups": [
+        {
+          "year": "2015",
+          "events": [
+            {
+              "id": "openai-introduced",
+              "date": "2015-12-11",
+              "date_precision": "day",
+              "title": "OpenAI is introduced",
+              "summary": "OpenAI published its introductory announcement and described itself as a nonprofit artificial intelligence research company.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This is an appropriate public starting point for a timeline about OpenAI's institutional history.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-openai/",
+                  "title": "Introducing OpenAI",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "events": [
+            {
+              "id": "openai-api-private-beta",
+              "date": "2020-06-11",
+              "date_precision": "day",
+              "title": "OpenAI API launches in private beta",
+              "summary": "OpenAI announced a private beta API for accessing new AI models through a general-purpose text-in, text-out interface.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This milestone marks an early public path from model research toward developer-facing infrastructure.",
+              "sources": [
+                {
+                  "url": "https://openai.com/blog/openai-api/",
+                  "title": "OpenAI API",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "events": [
+            {
+              "id": "dall-e-announced",
+              "date": "2021-01-05",
+              "date_precision": "day",
+              "title": "DALL-E is announced",
+              "summary": "OpenAI announced DALL-E, a neural network trained to create images from text captions.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "The announcement broadens the public timeline beyond language output into text-guided image generation.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/dall-e",
+                  "title": "DALL-E: Creating images from text",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "events": [
+            {
+              "id": "chatgpt-public-launch",
+              "date": "2022-11-30",
+              "date_precision": "day",
+              "title": "ChatGPT launches publicly",
+              "summary": "OpenAI opened ChatGPT to public feedback as a research preview.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "The public launch of ChatGPT is a major product milestone and a useful anchor for later product changes.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/chatgpt/",
+                  "title": "Introducing ChatGPT",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "events": [
+            {
+              "id": "gpt-4-announced",
+              "date": "2023-03-14",
+              "date_precision": "day",
+              "title": "GPT-4 is announced",
+              "summary": "OpenAI announced GPT-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This milestone documents a major model-generation change after ChatGPT's public launch.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/gpt-4-research/",
+                  "title": "GPT-4",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            },
+            {
+              "id": "chatgpt-plugins-alpha",
+              "date": "2023-03-23",
+              "date_precision": "day",
+              "title": "ChatGPT plugins enter alpha rollout",
+              "summary": "OpenAI announced initial support for ChatGPT plugins and began extending alpha access to users and developers from a waitlist.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation.",
+              "sources": [
+                {
+                  "url": "https://openai.com/blog/chatgpt-plugins",
+                  "title": "ChatGPT plugins",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01",
+                  "note": "The official page now notes that OpenAI plugins have been deprecated."
+                }
+              ]
+            },
+            {
+              "id": "devday-gpt-4-turbo-assistants-api",
+              "date": "2023-11-06",
+              "date_precision": "day",
+              "title": "DevDay introduces GPT-4 Turbo and Assistants API",
+              "summary": "OpenAI announced GPT-4 Turbo, the Assistants API, and additional multimodal developer-platform capabilities at DevDay.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This event captures a substantial expansion of the developer platform after the initial API beta.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+                  "title": "New models and developer products announced at DevDay",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "events": [
+            {
+              "id": "gpt-store-rollout",
+              "date": "2024-01-10",
+              "date_precision": "day",
+              "title": "GPT Store rollout begins",
+              "summary": "OpenAI began rolling out the GPT Store to ChatGPT Plus, Team, and Enterprise users.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This milestone documents a product-distribution layer for custom versions of ChatGPT.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-the-gpt-store/",
+                  "title": "Introducing the GPT Store",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            },
+            {
+              "id": "gpt-4o-announced",
+              "date": "2024-05-13",
+              "date_precision": "day",
+              "title": "GPT-4o is introduced",
+              "summary": "OpenAI introduced GPT-4o as a new flagship model and described improvements across text, voice, and vision.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This is a later public product and model milestone that can be expanded with system-card evidence.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+                  "title": "Introducing GPT-4o and more tools to ChatGPT free users",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            },
+            {
+              "id": "o1-preview-released",
+              "date": "2024-09-12",
+              "date_precision": "day",
+              "title": "OpenAI o1-preview is released",
+              "summary": "OpenAI released the first preview models in its o1 series in ChatGPT and the API, describing them as models designed to spend more time thinking before responding.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This introduces a public reasoning-model branch in the product timeline.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-openai-o1-preview/",
+                  "title": "Introducing OpenAI o1-preview",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            },
+            {
+              "id": "chatgpt-search-introduced",
+              "date": "2024-10-31",
+              "date_precision": "day",
+              "title": "ChatGPT search is introduced",
+              "summary": "OpenAI introduced ChatGPT search with web answers that include links to relevant sources, initially for ChatGPT Plus and Team users and SearchGPT waitlist users.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "interpretation": "This event is directly relevant to a timeline project concerned with source trails and current web information.",
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-chatgpt-search/",
+                  "title": "Introducing ChatGPT search",
+                  "publisher": "OpenAI",
+                  "type": "primary",
+                  "accessed": "2026-06-01"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

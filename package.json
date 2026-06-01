@@ -1,0 +1,13 @@
+{
+  "name": "evidence-timeline-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "export:presentation": "node scripts/export-presentation.mjs",
+    "extract:x": "node scripts/extract-x-archive.mjs",
+    "propose": "node scripts/propose.mjs",
+    "check": "npm run validate && npm run export:presentation && npm run build"
+  }
+}

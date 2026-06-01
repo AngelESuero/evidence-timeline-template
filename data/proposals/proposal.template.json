@@ -1,0 +1,31 @@
+{
+  "proposal_id": "replace-me",
+  "target_timeline": "openai-seed",
+  "review_status": "needs_review",
+  "candidate_event": {
+    "id": "replace-me",
+    "date": "YYYY-MM-DD",
+    "date_precision": "day",
+    "title": "Replace me",
+    "summary": "Write a narrow factual claim supported by the source.",
+    "sources": [
+      {
+        "url": "https://example.com/source",
+        "title": "Replace me",
+        "publisher": "Replace me",
+        "type": "personal_archive",
+        "accessed": "YYYY-MM-DD",
+        "note": "Keep private excerpts out of Git. Record only the minimum review note."
+      }
+    ],
+    "evidence_status": "proposed",
+    "confidence": "low",
+    "interpretation": "",
+    "disputes": [],
+    "related_events": []
+  },
+  "review_notes": [
+    "Confirm publication permission before moving personal archive material into a public timeline."
+  ]
+}
+
