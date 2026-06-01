@@ -67,3 +67,8 @@ The command creates a structured verbatim index, topic shortlists, and a working
 analysis inside `private/`. The entire directory is gitignored. Treat the raw
 export as the canonical private source and move only reviewed, summarized
 candidate events into `data/proposals/`.
+
+Run `npm run interpret:x` to create a private one-record-per-post idea ledger.
+Each entry keeps the verbatim archive text beside a separate interpretation
+layer. Link-dependent reactions remain explicitly unresolved until their
+context is inspected.

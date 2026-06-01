@@ -85,6 +85,10 @@ interfaces separate from ingestion and review logic.
 See [`docs/presentation.md`](docs/presentation.md) for the presentation contract
 and the reusable editorial direction recovered from an earlier timeline draft.
 
+See [`docs/alignment-principles.md`](docs/alignment-principles.md) for the
+product principles distilled from the approved private archive without
+publishing private post text.
+
 ## Publishing
 
 The generated `dist/` directory is a static site and can be hosted with GitHub
