@@ -26,7 +26,9 @@ npm run build
 
 Open `dist/index.html` in a browser after building.
 
-GitHub Actions validate each change. The included Pages workflow can publish `dist/` after the repository is pushed and GitHub Pages is enabled.
+The repository can be paired with GitHub Actions and GitHub Pages after the
+publishing token is authorized for workflow changes. Until then, run
+`npm run check` locally before publishing.
 
 ## Structure
 
@@ -36,7 +38,6 @@ data/proposals/       Review queue for machine- or human-proposed events
 schema/               Portable JSON Schema
 scripts/              Dependency-free validation and static-site generation
 dist/                 Generated static site
-.github/workflows/    CI validation and optional GitHub Pages deployment
 ```
 
 ## Event Model
@@ -86,4 +87,6 @@ and the reusable editorial direction recovered from an earlier timeline draft.
 
 ## Publishing
 
-The generated `dist/` directory is a static site and can be hosted with GitHub Pages. This repository is local and staged only until a remote repository and public publishing step are explicitly approved.
+The generated `dist/` directory is a static site and can be hosted with GitHub
+Pages. Add a Pages workflow after authorizing workflow changes, or publish
+`dist/` through another static host.
