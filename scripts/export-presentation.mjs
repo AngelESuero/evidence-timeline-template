@@ -14,7 +14,7 @@ const timelines = await Promise.all(
 );
 
 const presentation = {
-  generated_at: new Date().toISOString(),
+  generated_at: `${timelines.map((timeline) => timeline.updated).sort().at(-1)}T00:00:00.000Z`,
   timelines: timelines.map((timeline) => {
     const groups = new Map();
     for (const event of [...timeline.events].sort((a, b) => a.date.localeCompare(b.date))) {
