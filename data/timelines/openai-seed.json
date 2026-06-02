@@ -11,14 +11,18 @@
       "title": "OpenAI is introduced",
       "summary": "OpenAI published its introductory announcement and described itself as a nonprofit artificial intelligence research company.",
       "record_type": "public_statement",
-      "timeline_lanes": ["chronology", "social_transition"],
+      "timeline_lanes": [
+        "chronology",
+        "social_transition"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-openai/",
           "title": "Introducing OpenAI",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
@@ -34,21 +38,27 @@
       "title": "OpenAI API launches in private beta",
       "summary": "OpenAI announced a private beta API for accessing new AI models through a general-purpose text-in, text-out interface.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/blog/openai-api/",
           "title": "OpenAI API",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This milestone marks an early public path from model research toward developer-facing infrastructure.",
       "disputes": [],
-      "related_events": ["openai-introduced"]
+      "related_events": [
+        "openai-introduced"
+      ]
     },
     {
       "id": "dall-e-announced",
@@ -57,7 +67,11 @@
       "title": "DALL-E is announced",
       "summary": "OpenAI announced DALL-E, a neural network trained to create images from text captions.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "capability_implication": "The public product surface expands from text generation into text-guided image creation.",
       "sources": [
         {
@@ -65,14 +79,17 @@
           "title": "DALL-E: Creating images from text",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "The announcement broadens the public timeline beyond language output into text-guided image generation.",
       "disputes": [],
-      "related_events": ["openai-api-private-beta"]
+      "related_events": [
+        "openai-api-private-beta"
+      ]
     },
     {
       "id": "chatgpt-public-launch",
@@ -81,7 +98,11 @@
       "title": "ChatGPT launches publicly",
       "summary": "OpenAI opened ChatGPT to public feedback as a research preview.",
       "record_type": "release",
-      "timeline_lanes": ["chronology", "product", "social_transition"],
+      "timeline_lanes": [
+        "chronology",
+        "product",
+        "social_transition"
+      ],
       "social_implication": "A public research preview made conversational AI directly accessible to a broad audience and created a new feedback surface.",
       "sources": [
         {
@@ -89,7 +110,8 @@
           "title": "Introducing ChatGPT",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
@@ -105,24 +127,32 @@
       "title": "GPT-4 is announced",
       "summary": "OpenAI announced GPT-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability"],
+      "timeline_lanes": [
+        "chronology",
+        "capability"
+      ],
       "capability_implication": "The announcement documents a shift from text-only interaction toward multimodal input.",
       "reliability_note": "The announcement describes capabilities, but a complete record should pair it with system-card evidence and known limitations.",
-      "open_questions": ["Which demonstrated capabilities were reliable enough for everyday use at launch?"],
+      "open_questions": [
+        "Which demonstrated capabilities were reliable enough for everyday use at launch?"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/gpt-4-research/",
           "title": "GPT-4",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This milestone documents a major model-generation change after ChatGPT's public launch.",
       "disputes": [],
-      "related_events": ["chatgpt-public-launch"]
+      "related_events": [
+        "chatgpt-public-launch"
+      ]
     },
     {
       "id": "chatgpt-plugins-alpha",
@@ -131,7 +161,11 @@
       "title": "ChatGPT plugins enter alpha rollout",
       "summary": "OpenAI announced initial support for ChatGPT plugins and began extending alpha access to users and developers from a waitlist.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product", "capability"],
+      "timeline_lanes": [
+        "chronology",
+        "product",
+        "capability"
+      ],
       "capability_implication": "Plugins extend the product from conversation toward tool use and third-party actions.",
       "reliability_note": "The official page now notes that OpenAI plugins have been deprecated. The timeline should retain both introduction and later lifecycle context.",
       "sources": [
@@ -141,14 +175,18 @@
           "publisher": "OpenAI",
           "type": "official_announcement",
           "accessed": "2026-06-01",
-          "note": "The official page now notes that OpenAI plugins have been deprecated."
+          "note": "The official page now notes that OpenAI plugins have been deprecated.",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation.",
       "disputes": [],
-      "related_events": ["chatgpt-public-launch", "gpt-4-announced"]
+      "related_events": [
+        "chatgpt-public-launch",
+        "gpt-4-announced"
+      ]
     },
     {
       "id": "devday-gpt-4-turbo-assistants-api",
@@ -157,7 +195,11 @@
       "title": "DevDay introduces GPT-4 Turbo and Assistants API",
       "summary": "OpenAI announced GPT-4 Turbo, the Assistants API, and additional multimodal developer-platform capabilities at DevDay.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product", "capability"],
+      "timeline_lanes": [
+        "chronology",
+        "product",
+        "capability"
+      ],
       "capability_implication": "The developer platform adds more persistent, tool-oriented building blocks for assistant experiences.",
       "sources": [
         {
@@ -165,14 +207,18 @@
           "title": "New models and developer products announced at DevDay",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This event captures a substantial expansion of the developer platform after the initial API beta.",
       "disputes": [],
-      "related_events": ["openai-api-private-beta", "gpt-4-announced"]
+      "related_events": [
+        "openai-api-private-beta",
+        "gpt-4-announced"
+      ]
     },
     {
       "id": "gpt-store-rollout",
@@ -181,21 +227,29 @@
       "title": "GPT Store rollout begins",
       "summary": "OpenAI began rolling out the GPT Store to ChatGPT Plus, Team, and Enterprise users.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product", "social_transition"],
+      "timeline_lanes": [
+        "chronology",
+        "product",
+        "social_transition"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-the-gpt-store/",
           "title": "Introducing the GPT Store",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This milestone documents a product-distribution layer for custom versions of ChatGPT.",
       "disputes": [],
-      "related_events": ["chatgpt-plugins-alpha", "devday-gpt-4-turbo-assistants-api"]
+      "related_events": [
+        "chatgpt-plugins-alpha",
+        "devday-gpt-4-turbo-assistants-api"
+      ]
     },
     {
       "id": "gpt-4o-announced",
@@ -204,24 +258,33 @@
       "title": "GPT-4o is introduced",
       "summary": "OpenAI introduced GPT-4o as a new flagship model and described improvements across text, voice, and vision.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "capability_implication": "The product direction moves toward more fluid interaction across text, voice, and vision.",
       "reliability_note": "The announcement is an official capability claim. A fuller record should add system-card evidence and reviewed demonstrations.",
-      "open_questions": ["How consistently do multimodal improvements transfer into real-world workflows?"],
+      "open_questions": [
+        "How consistently do multimodal improvements transfer into real-world workflows?"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
           "title": "Introducing GPT-4o and more tools to ChatGPT free users",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This is a later public product and model milestone that can be expanded with system-card evidence.",
       "disputes": [],
-      "related_events": ["gpt-4-announced"]
+      "related_events": [
+        "gpt-4-announced"
+      ]
     },
     {
       "id": "o1-preview-released",
@@ -230,7 +293,11 @@
       "title": "OpenAI o1-preview is released",
       "summary": "OpenAI released the first preview models in its o1 series in ChatGPT and the API, describing them as models designed to spend more time thinking before responding.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "capability_implication": "The public model line adds a reasoning-oriented branch designed to spend more time on a response.",
       "reliability_note": "The preview label matters: this record marks a public release, not a conclusion about general reliability.",
       "sources": [
@@ -239,14 +306,17 @@
           "title": "Introducing OpenAI o1-preview",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This introduces a public reasoning-model branch in the product timeline.",
       "disputes": [],
-      "related_events": ["gpt-4o-announced"]
+      "related_events": [
+        "gpt-4o-announced"
+      ]
     },
     {
       "id": "canvas-beta-introduced",
@@ -255,7 +325,10 @@
       "title": "Canvas enters beta",
       "summary": "OpenAI introduced canvas as an interface for collaborating with ChatGPT on writing and coding projects beyond a simple chat thread.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-canvas/",
@@ -273,7 +346,10 @@
       "interpretation": "Canvas is a useful interface milestone: the product expands from conversational exchange into a shared workspace.",
       "capability_implication": "The interface supports iterative writing and coding collaboration in a separate working surface.",
       "disputes": [],
-      "related_events": ["chatgpt-public-launch", "gpt-4o-announced"]
+      "related_events": [
+        "chatgpt-public-launch",
+        "gpt-4o-announced"
+      ]
     },
     {
       "id": "chatgpt-search-introduced",
@@ -282,24 +358,34 @@
       "title": "ChatGPT search is introduced",
       "summary": "OpenAI introduced ChatGPT search with web answers that include links to relevant sources, initially for ChatGPT Plus and Team users and SearchGPT waitlist users.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "product", "capability"],
+      "timeline_lanes": [
+        "chronology",
+        "product",
+        "capability"
+      ],
       "capability_implication": "The product adds a web-information layer with inspectable outbound source links.",
       "reliability_note": "Linked sources improve inspectability, but the presence of citations does not by itself verify every generated claim.",
-      "open_questions": ["How should readers evaluate source quality and claim-to-source alignment in generated answers?"],
+      "open_questions": [
+        "How should readers evaluate source quality and claim-to-source alignment in generated answers?"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-chatgpt-search/",
           "title": "Introducing ChatGPT search",
           "publisher": "OpenAI",
           "type": "official_announcement",
-          "accessed": "2026-06-01"
+          "accessed": "2026-06-01",
+          "archive_status": "live"
         }
       ],
       "evidence_status": "verified",
       "confidence": "high",
       "interpretation": "This event is directly relevant to a timeline project concerned with source trails and current web information.",
       "disputes": [],
-      "related_events": ["chatgpt-plugins-alpha", "o1-preview-released"]
+      "related_events": [
+        "chatgpt-plugins-alpha",
+        "o1-preview-released"
+      ]
     },
     {
       "id": "sora-product-rollout",
@@ -308,7 +394,11 @@
       "title": "Sora rolls out as a standalone product",
       "summary": "OpenAI moved its video-generation model out of research preview and began rolling out Sora Turbo at sora.com for ChatGPT Plus and Pro users.",
       "record_type": "release",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/blog/sora-is-here/",
@@ -328,7 +418,10 @@
       "capability_implication": "Video generation moves from research preview into a standalone product experience.",
       "reliability_note": "The official page records safety restrictions and a later product-status change.",
       "disputes": [],
-      "related_events": ["dall-e-announced", "gpt-4o-announced"]
+      "related_events": [
+        "dall-e-announced",
+        "gpt-4o-announced"
+      ]
     },
     {
       "id": "operator-research-preview",
@@ -337,7 +430,11 @@
       "title": "Operator launches as a research preview",
       "summary": "OpenAI introduced Operator as a research preview of an agent that can use its own browser to perform tasks by typing, clicking, and scrolling.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-operator/",
@@ -365,9 +462,13 @@
       "interpretation": "This is a useful marker in the shift from conversational assistance toward agents acting through interfaces people already use.",
       "capability_implication": "Operator adds visual browser interaction through cursor and keyboard actions.",
       "reliability_note": "OpenAI labels Operator a research preview and documents mistakes, prompt injections, and harmful-task risks in the accompanying system card.",
-      "open_questions": ["Which classes of browser tasks remain reliable enough for routine delegated use?"],
+      "open_questions": [
+        "Which classes of browser tasks remain reliable enough for routine delegated use?"
+      ],
       "disputes": [],
-      "related_events": ["chatgpt-search-introduced"]
+      "related_events": [
+        "chatgpt-search-introduced"
+      ]
     },
     {
       "id": "deep-research-introduced",
@@ -376,7 +477,11 @@
       "title": "Deep research is introduced",
       "summary": "OpenAI introduced deep research in ChatGPT as an agentic capability for multi-step research tasks that uses web browsing and Python tools.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-deep-research/",
@@ -394,9 +499,14 @@
       "interpretation": "This extends source-oriented search into longer-running research workflows.",
       "capability_implication": "The product can carry out multi-step web research with tool use rather than only returning a single search response.",
       "reliability_note": "Research output still requires source inspection and claim-level review.",
-      "open_questions": ["How consistently do generated reports align each material claim with the strongest available source?"],
+      "open_questions": [
+        "How consistently do generated reports align each material claim with the strongest available source?"
+      ],
       "disputes": [],
-      "related_events": ["chatgpt-search-introduced", "operator-research-preview"]
+      "related_events": [
+        "chatgpt-search-introduced",
+        "operator-research-preview"
+      ]
     },
     {
       "id": "gpt-4-5-research-preview",
@@ -405,7 +515,11 @@
       "title": "GPT-4.5 enters research preview",
       "summary": "OpenAI released GPT-4.5 as a research preview and described it as its largest and best model for chat at the time.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-gpt-4-5/",
@@ -424,7 +538,10 @@
       "capability_implication": "OpenAI presents unsupervised learning and reasoning as complementary axes of model capability.",
       "reliability_note": "OpenAI described the release as a research preview and noted that GPT-4.5 did not support Voice Mode, video, or screensharing in ChatGPT at launch.",
       "disputes": [],
-      "related_events": ["gpt-4o-announced", "o1-preview-released"]
+      "related_events": [
+        "gpt-4o-announced",
+        "o1-preview-released"
+      ]
     },
     {
       "id": "responses-api-agents-sdk-launch",
@@ -433,7 +550,11 @@
       "title": "Responses API and Agents SDK launch",
       "summary": "OpenAI released the Responses API, built-in web search, file search and computer-use tools, the Agents SDK, and tracing tools for agentic applications.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/new-tools-for-building-agents/",
@@ -451,9 +572,15 @@
       "interpretation": "This is a major developer-platform milestone for building inspectable agent workflows.",
       "capability_implication": "Developers gain a common API primitive with built-in tools, orchestration, guardrails, and execution tracing.",
       "reliability_note": "The announcement frames production reliability and visibility as active engineering concerns, not solved assumptions.",
-      "open_questions": ["How should agent traces be archived so later timelines can distinguish model capability from orchestration quality?"],
+      "open_questions": [
+        "How should agent traces be archived so later timelines can distinguish model capability from orchestration quality?"
+      ],
       "disputes": [],
-      "related_events": ["openai-api-private-beta", "operator-research-preview", "deep-research-introduced"]
+      "related_events": [
+        "openai-api-private-beta",
+        "operator-research-preview",
+        "deep-research-introduced"
+      ]
     },
     {
       "id": "gpt-4-1-api-launch",
@@ -462,7 +589,11 @@
       "title": "GPT-4.1 launches in the API",
       "summary": "OpenAI launched GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano in the API, highlighting improvements in coding, instruction following, and long-context comprehension.",
       "record_type": "release",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/gpt-4-1/",
@@ -480,7 +611,10 @@
       "interpretation": "This is a developer-platform milestone that adds a long-context model family and a smaller nano tier.",
       "capability_implication": "The announcement emphasizes coding, instruction following, and context windows up to one million tokens.",
       "disputes": [],
-      "related_events": ["openai-api-private-beta", "gpt-4-5-research-preview"]
+      "related_events": [
+        "openai-api-private-beta",
+        "gpt-4-5-research-preview"
+      ]
     },
     {
       "id": "o3-o4-mini-release",
@@ -489,7 +623,11 @@
       "title": "OpenAI releases o3 and o4-mini",
       "summary": "OpenAI released o3 and o4-mini as reasoning models with access to tools in ChatGPT and function calling in the API.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
@@ -507,9 +645,15 @@
       "interpretation": "This is a stronger bridge between reasoning models and agentic tool use.",
       "capability_implication": "The models can reason about when and how to use tools including web search, files, Python, visual inputs, and image generation.",
       "reliability_note": "OpenAI reports improved performance and accompanying safety evaluation; benchmark gains do not establish reliability across every workflow.",
-      "open_questions": ["Which tool-using workflows remain brittle despite improved benchmark performance?"],
+      "open_questions": [
+        "Which tool-using workflows remain brittle despite improved benchmark performance?"
+      ],
       "disputes": [],
-      "related_events": ["o1-preview-released", "gpt-4-1-api-launch", "deep-research-introduced"]
+      "related_events": [
+        "o1-preview-released",
+        "gpt-4-1-api-launch",
+        "deep-research-introduced"
+      ]
     },
     {
       "id": "responses-api-tools-expanded",
@@ -518,7 +662,11 @@
       "title": "Responses API adds MCP and more built-in tools",
       "summary": "OpenAI added remote MCP server support, image generation, Code Interpreter, file-search improvements, background mode, reasoning summaries, and encrypted reasoning items to the Responses API.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
@@ -537,7 +685,10 @@
       "capability_implication": "Agentic applications can connect remote MCP servers and use a broader set of built-in tools.",
       "reliability_note": "Background mode and observability-related features matter because longer workflows need recoverability and inspection.",
       "disputes": [],
-      "related_events": ["responses-api-agents-sdk-launch", "o3-o4-mini-release"]
+      "related_events": [
+        "responses-api-agents-sdk-launch",
+        "o3-o4-mini-release"
+      ]
     },
     {
       "id": "chatgpt-agent-introduced",
@@ -546,7 +697,11 @@
       "title": "ChatGPT agent is introduced",
       "summary": "OpenAI introduced ChatGPT agent as a unified agentic system that can complete online tasks using its own virtual computer.",
       "record_type": "product_change",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-chatgpt-agent/",
@@ -574,9 +729,15 @@
       "interpretation": "This consolidates earlier browser-action and research branches into a broader product surface.",
       "capability_implication": "The system combines website interaction, research, and multi-step task completion through a virtual computer.",
       "reliability_note": "The system card documents safeguards and residual risks. A fuller record should continue tracking deployment changes over time.",
-      "open_questions": ["Which actions should remain confirmation-gated as agentic systems become more capable?"],
+      "open_questions": [
+        "Which actions should remain confirmation-gated as agentic systems become more capable?"
+      ],
       "disputes": [],
-      "related_events": ["operator-research-preview", "deep-research-introduced", "o3-o4-mini-release"]
+      "related_events": [
+        "operator-research-preview",
+        "deep-research-introduced",
+        "o3-o4-mini-release"
+      ]
     },
     {
       "id": "gpt-5-introduced",
@@ -585,7 +746,11 @@
       "title": "GPT-5 is introduced",
       "summary": "OpenAI introduced GPT-5 as a unified system with a smart, efficient model, a deeper reasoning model, and a router that selects between them.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-gpt-5/",
@@ -613,9 +778,15 @@
       "interpretation": "The product presentation moves toward a routed system rather than requiring users to choose every model branch manually.",
       "capability_implication": "OpenAI describes GPT-5 as combining efficient responses, deeper reasoning, and automatic routing.",
       "reliability_note": "The system card should remain the primary companion source for capability and safety claims.",
-      "open_questions": ["How should a public timeline represent routed systems when model behavior changes by task and deployment state?"],
+      "open_questions": [
+        "How should a public timeline represent routed systems when model behavior changes by task and deployment state?"
+      ],
       "disputes": [],
-      "related_events": ["gpt-4-5-research-preview", "gpt-4-1-api-launch", "o3-o4-mini-release"]
+      "related_events": [
+        "gpt-4-5-research-preview",
+        "gpt-4-1-api-launch",
+        "o3-o4-mini-release"
+      ]
     },
     {
       "id": "gpt-5-codex-release",
@@ -624,7 +795,11 @@
       "title": "GPT-5-Codex is released",
       "summary": "OpenAI released GPT-5-Codex as a version of GPT-5 optimized for agentic coding in Codex.",
       "record_type": "capability_signal",
-      "timeline_lanes": ["chronology", "capability", "product"],
+      "timeline_lanes": [
+        "chronology",
+        "capability",
+        "product"
+      ],
       "sources": [
         {
           "url": "https://openai.com/index/introducing-upgrades-to-codex/",
@@ -652,9 +827,14 @@
       "interpretation": "This is a domain-specific agentic-coding milestone within the broader routed-system and agent-platform trajectory.",
       "capability_implication": "OpenAI describes GPT-5-Codex as supporting both interactive coding and longer independent software-engineering tasks.",
       "reliability_note": "The official release describes improved code review and longer task execution; the accompanying system-card addendum remains the appropriate evaluation companion.",
-      "open_questions": ["How should coding-agent timelines distinguish benchmark improvements from verified repository-level outcomes?"],
+      "open_questions": [
+        "How should coding-agent timelines distinguish benchmark improvements from verified repository-level outcomes?"
+      ],
       "disputes": [],
-      "related_events": ["responses-api-tools-expanded", "gpt-5-introduced"]
+      "related_events": [
+        "responses-api-tools-expanded",
+        "gpt-5-introduced"
+      ]
     }
   ]
 }

@@ -28,7 +28,8 @@ npm run propose -- \
   --source-title "Example source" \
   --source-publisher "Example publisher" \
   --source-type official_announcement \
-  --accessed 2026-06-01
+  --accessed 2026-06-01 \
+  --archive-status live
 ```
 
 The command always writes a `needs_review` proposal. It does not publish the event.

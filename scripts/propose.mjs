@@ -41,6 +41,7 @@ const sourceTitle = requireArg(args, "source-title");
 const sourcePublisher = requireArg(args, "source-publisher");
 const sourceType = requireArg(args, "source-type");
 const accessed = requireArg(args, "accessed");
+const archiveStatus = requireArg(args, "archive-status");
 
 if (!idPattern.test(proposalId)) throw new Error("--proposal-id must use lowercase letters, numbers, and hyphens.");
 if (!idPattern.test(targetTimeline)) throw new Error("--target-timeline must use lowercase letters, numbers, and hyphens.");
@@ -49,6 +50,7 @@ if (!datePattern.test(date)) throw new Error("--date must be YYYY, YYYY-MM, or Y
 if (!datePattern.test(accessed)) throw new Error("--accessed must be YYYY, YYYY-MM, or YYYY-MM-DD.");
 if (!allowedPrecision.has(datePrecision)) throw new Error("--date-precision is invalid.");
 if (!allowedSourceTypes.has(sourceType)) throw new Error("--source-type is invalid.");
+if (!["live", "archived", "missing", "context_dependent"].includes(archiveStatus)) throw new Error("--archive-status is invalid.");
 try { new URL(sourceUrl); } catch { throw new Error("--source-url must be an absolute URL."); }
 
 const proposal = {
@@ -68,6 +70,7 @@ const proposal = {
         publisher: sourcePublisher,
         type: sourceType,
         accessed,
+        archive_status: archiveStatus,
         ...(args["source-note"] ? { note: args["source-note"] } : {})
       }
     ],

@@ -31,7 +31,8 @@ publishing token is authorized for workflow changes. Until then, run
 `npm run check` locally before publishing.
 
 `npm run check` validates records and cross-links, scans public files for
-private-archive leak markers, exports registries, and rebuilds the static site.
+private-archive leak markers, exports registries, audits stored source lifecycle
+metadata, and rebuilds the static site.
 
 ## Structure
 

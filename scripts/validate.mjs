@@ -43,6 +43,7 @@ function validateEvent(event, label) {
         if (!allowedSourceTypes.has(source.type)) errors.push(`${sourceLabel}.type is invalid`);
         if (!datePattern.test(source.accessed ?? "")) errors.push(`${sourceLabel}.accessed must be a date`);
         if (source.published && !datePattern.test(source.published)) errors.push(`${sourceLabel}.published must be a date`);
+        if (!["live", "archived", "missing", "context_dependent"].includes(source.archive_status)) errors.push(`${sourceLabel}.archive_status is invalid`);
         try { new URL(source.url); } catch { errors.push(`${sourceLabel}.url must be an absolute URL`); }
       }
     }

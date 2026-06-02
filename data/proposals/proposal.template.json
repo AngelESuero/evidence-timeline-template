@@ -17,6 +17,7 @@
         "publisher": "Replace me",
         "type": "personal_archive",
         "accessed": "YYYY-MM-DD",
+        "archive_status": "context_dependent",
         "note": "Keep private excerpts out of Git. Record only the minimum review note."
       }
     ],

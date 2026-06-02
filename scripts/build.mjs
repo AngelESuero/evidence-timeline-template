@@ -80,7 +80,7 @@ const timelineMarkup = timelines.map((timeline) => `
               ${event.related_events?.length ? `<div class="related-events"><strong>Related records</strong>${event.related_events.map((id) => `<a href="#${escapeHtml(id)}">${escapeHtml(id)}</a>`).join("")}</div>` : ""}
               <div class="source-list">
                 <strong>Sources</strong>
-                <ul>${event.sources.map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a><small>${escapeHtml(source.publisher)} · ${escapeHtml(label(source.type))} · accessed ${escapeHtml(source.accessed)}</small>${source.note ? `<small>${escapeHtml(source.note)}</small>` : ""}</li>`).join("")}</ul>
+                <ul>${event.sources.map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a><small>${escapeHtml(source.publisher)} · ${escapeHtml(label(source.type))} · ${escapeHtml(label(source.archive_status))} · accessed ${escapeHtml(source.accessed)}</small>${source.note ? `<small>${escapeHtml(source.note)}</small>` : ""}</li>`).join("")}</ul>
               </div>
             </details>
             <div class="labels"><span>${escapeHtml(event.confidence)} confidence</span><span>${escapeHtml(event.date_precision)} precision</span></div>
@@ -98,7 +98,7 @@ const sourceMarkup = `
       <p>Each cited URL appears once here. Event cards preserve the claim-level context.</p>
     </header>
     <div class="source-register-grid">
-      ${allSources.map((source) => `<article class="source-card"><p>${escapeHtml(label(source.type))}</p><h3><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a></h3><small>${escapeHtml(source.publisher)} · accessed ${escapeHtml(source.accessed)}</small>${source.claim_scope ? `<small>${escapeHtml(source.claim_scope)}</small>` : ""}</article>`).join("")}
+      ${allSources.map((source) => `<article class="source-card"><p>${escapeHtml(label(source.type))} · ${escapeHtml(label(source.archive_status))}</p><h3><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a></h3><small>${escapeHtml(source.publisher)} · accessed ${escapeHtml(source.accessed)}</small>${source.claim_scope ? `<small>${escapeHtml(source.claim_scope)}</small>` : ""}</article>`).join("")}
     </div>
   </section>`;
 

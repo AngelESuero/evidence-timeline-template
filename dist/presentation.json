@@ -35,7 +35,8 @@
                   "title": "Introducing OpenAI",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             }
@@ -71,7 +72,8 @@
                   "title": "OpenAI API",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             }
@@ -108,7 +110,8 @@
                   "title": "DALL-E: Creating images from text",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             }
@@ -143,7 +146,8 @@
                   "title": "Introducing ChatGPT",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             }
@@ -181,7 +185,8 @@
                   "title": "GPT-4",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -215,7 +220,8 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "note": "The official page now notes that OpenAI plugins have been deprecated."
+                  "note": "The official page now notes that OpenAI plugins have been deprecated.",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -248,7 +254,8 @@
                   "title": "New models and developer products announced at DevDay",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             }
@@ -286,7 +293,8 @@
                   "title": "Introducing the GPT Store",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -320,7 +328,8 @@
                   "title": "Introducing GPT-4o and more tools to ChatGPT free users",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -352,7 +361,8 @@
                   "title": "Introducing OpenAI o1-preview",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -422,7 +432,8 @@
                   "title": "Introducing ChatGPT search",
                   "publisher": "OpenAI",
                   "type": "official_announcement",
-                  "accessed": "2026-06-01"
+                  "accessed": "2026-06-01",
+                  "archive_status": "live"
                 }
               ]
             },

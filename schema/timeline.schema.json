@@ -18,7 +18,7 @@
   "$defs": {
     "source": {
       "type": "object",
-      "required": ["url", "title", "publisher", "type", "accessed"],
+      "required": ["url", "title", "publisher", "type", "accessed", "archive_status"],
       "properties": {
         "url": { "type": "string", "format": "uri" },
         "title": { "type": "string", "minLength": 1 },
