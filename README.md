@@ -47,9 +47,11 @@ Each event records:
 - a stable `id`
 - a date and its precision
 - a narrow factual `summary`
+- a `record_type` and one or more optional `timeline_lanes`
 - one or more cited `sources`
 - an `evidence_status` and `confidence`
-- optional `interpretation`, `disputes`, and `related_events`
+- optional `interpretation`, capability, reliability, and social notes
+- optional `disputes`, `open_questions`, and `related_events`
 
 See [`schema/timeline.schema.json`](schema/timeline.schema.json), [`schema/proposal.schema.json`](schema/proposal.schema.json), and [`data/timelines/openai-seed.json`](data/timelines/openai-seed.json).
 
@@ -60,13 +62,10 @@ See [`schema/timeline.schema.json`](schema/timeline.schema.json), [`schema/propo
 - `disputed`: cited sources materially disagree.
 - `incomplete`: the event is useful to retain but needs better sourcing.
 
-Source types:
-
-- `primary`: original material, such as an official announcement or filing.
-- `official_interpretive`: an official source that adds interpretation or retrospective framing.
-- `reporting`: journalism or third-party reporting.
-- `commentary`: analysis, opinion, or social commentary.
-- `personal_archive`: an approved private or exported source. Do not publish without review.
+Source types are explicit enough to keep different kinds of evidence legible:
+official announcements, research, system cards, product documentation, legal
+or policy documents, frontier-voice posts and talks, external reporting,
+independent research, public commentary, and approved personal archives.
 
 ## Private Sources
 

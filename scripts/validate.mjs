@@ -8,7 +8,9 @@ const proposalDir = path.join(root, "data", "proposals");
 const allowedPrecision = new Set(["day", "month", "year", "range", "estimated"]);
 const allowedEvidence = new Set(["verified", "proposed", "disputed", "incomplete"]);
 const allowedConfidence = new Set(["high", "medium", "low"]);
-const allowedSourceTypes = new Set(["primary", "official_interpretive", "reporting", "commentary", "personal_archive"]);
+const allowedSourceTypes = new Set(["official_announcement", "official_research", "official_system_card", "official_product_documentation", "official_legal_or_policy_document", "frontier_voice_post", "frontier_voice_talk", "external_reporting", "independent_research", "public_commentary", "personal_archive"]);
+const allowedRecordTypes = new Set(["release", "research", "capability_signal", "product_change", "public_statement", "policy_response", "social_effect", "proposal", "dispute", "open_question"]);
+const allowedLanes = new Set(["chronology", "capability", "product", "frontier_voices", "social_transition", "disputes"]);
 const datePattern = /^\d{4}(-\d{2})?(-\d{2})?$/;
 const idPattern = /^[a-z0-9-]+$/;
 
@@ -24,6 +26,10 @@ function validateEvent(event, label) {
     if (!allowedPrecision.has(event.date_precision)) errors.push(`${label}.date_precision is invalid`);
     requireValue(errors, event.title, `${label}.title`);
     requireValue(errors, event.summary, `${label}.summary`);
+    if (event.record_type && !allowedRecordTypes.has(event.record_type)) errors.push(`${label}.record_type is invalid`);
+    if (event.timeline_lanes && (!Array.isArray(event.timeline_lanes) || event.timeline_lanes.some((lane) => !allowedLanes.has(lane)))) {
+      errors.push(`${label}.timeline_lanes is invalid`);
+    }
     if (!allowedEvidence.has(event.evidence_status)) errors.push(`${label}.evidence_status is invalid`);
     if (!allowedConfidence.has(event.confidence)) errors.push(`${label}.confidence is invalid`);
     if (!Array.isArray(event.sources) || event.sources.length === 0) {
@@ -36,9 +42,11 @@ function validateEvent(event, label) {
         requireValue(errors, source.publisher, `${sourceLabel}.publisher`);
         if (!allowedSourceTypes.has(source.type)) errors.push(`${sourceLabel}.type is invalid`);
         if (!datePattern.test(source.accessed ?? "")) errors.push(`${sourceLabel}.accessed must be a date`);
+        if (source.published && !datePattern.test(source.published)) errors.push(`${sourceLabel}.published must be a date`);
         try { new URL(source.url); } catch { errors.push(`${sourceLabel}.url must be an absolute URL`); }
       }
     }
+    if (event.updated && !datePattern.test(event.updated)) errors.push(`${label}.updated must be a date`);
   return errors;
 }
 

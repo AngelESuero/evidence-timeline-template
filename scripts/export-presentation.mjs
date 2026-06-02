@@ -28,7 +28,14 @@ const presentation = {
         summary: event.summary,
         evidence_status: event.evidence_status,
         confidence: event.confidence,
+        record_type: event.record_type ?? "release",
+        timeline_lanes: event.timeline_lanes ?? ["chronology"],
         interpretation: event.interpretation ?? null,
+        capability_implication: event.capability_implication ?? null,
+        reliability_note: event.reliability_note ?? null,
+        social_implication: event.social_implication ?? null,
+        related_events: event.related_events ?? [],
+        open_questions: event.open_questions ?? [],
         sources: event.sources
       });
     }

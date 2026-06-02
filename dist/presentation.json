@@ -18,13 +18,23 @@
               "summary": "OpenAI published its introductory announcement and described itself as a nonprofit artificial intelligence research company.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition"
+              ],
               "interpretation": "This is an appropriate public starting point for a timeline about OpenAI's institutional history.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/introducing-openai/",
                   "title": "Introducing OpenAI",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -42,13 +52,25 @@
               "summary": "OpenAI announced a private beta API for accessing new AI models through a general-purpose text-in, text-out interface.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "product"
+              ],
               "interpretation": "This milestone marks an early public path from model research toward developer-facing infrastructure.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [
+                "openai-introduced"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/blog/openai-api/",
                   "title": "OpenAI API",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -66,13 +88,26 @@
               "summary": "OpenAI announced DALL-E, a neural network trained to create images from text captions.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
               "interpretation": "The announcement broadens the public timeline beyond language output into text-guided image generation.",
+              "capability_implication": "The public product surface expands from text generation into text-guided image creation.",
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [
+                "openai-api-private-beta"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/dall-e",
                   "title": "DALL-E: Creating images from text",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -90,13 +125,24 @@
               "summary": "OpenAI opened ChatGPT to public feedback as a research preview.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "release",
+              "timeline_lanes": [
+                "chronology",
+                "product",
+                "social_transition"
+              ],
               "interpretation": "The public launch of ChatGPT is a major product milestone and a useful anchor for later product changes.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "A public research preview made conversational AI directly accessible to a broad audience and created a new feedback surface.",
+              "related_events": [],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/chatgpt/",
                   "title": "Introducing ChatGPT",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -114,13 +160,27 @@
               "summary": "OpenAI announced GPT-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability"
+              ],
               "interpretation": "This milestone documents a major model-generation change after ChatGPT's public launch.",
+              "capability_implication": "The announcement documents a shift from text-only interaction toward multimodal input.",
+              "reliability_note": "The announcement describes capabilities, but a complete record should pair it with system-card evidence and known limitations.",
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-public-launch"
+              ],
+              "open_questions": [
+                "Which demonstrated capabilities were reliable enough for everyday use at launch?"
+              ],
               "sources": [
                 {
                   "url": "https://openai.com/index/gpt-4-research/",
                   "title": "GPT-4",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -133,13 +193,27 @@
               "summary": "OpenAI announced initial support for ChatGPT plugins and began extending alpha access to users and developers from a waitlist.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "product",
+                "capability"
+              ],
               "interpretation": "This milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation.",
+              "capability_implication": "Plugins extend the product from conversation toward tool use and third-party actions.",
+              "reliability_note": "The official page now notes that OpenAI plugins have been deprecated. The timeline should retain both introduction and later lifecycle context.",
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-public-launch",
+                "gpt-4-announced"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/blog/chatgpt-plugins",
                   "title": "ChatGPT plugins",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01",
                   "note": "The official page now notes that OpenAI plugins have been deprecated."
                 }
@@ -153,13 +227,27 @@
               "summary": "OpenAI announced GPT-4 Turbo, the Assistants API, and additional multimodal developer-platform capabilities at DevDay.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "product",
+                "capability"
+              ],
               "interpretation": "This event captures a substantial expansion of the developer platform after the initial API beta.",
+              "capability_implication": "The developer platform adds more persistent, tool-oriented building blocks for assistant experiences.",
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [
+                "openai-api-private-beta",
+                "gpt-4-announced"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
                   "title": "New models and developer products announced at DevDay",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -177,13 +265,27 @@
               "summary": "OpenAI began rolling out the GPT Store to ChatGPT Plus, Team, and Enterprise users.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "product",
+                "social_transition"
+              ],
               "interpretation": "This milestone documents a product-distribution layer for custom versions of ChatGPT.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-plugins-alpha",
+                "devday-gpt-4-turbo-assistants-api"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/introducing-the-gpt-store/",
                   "title": "Introducing the GPT Store",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -196,13 +298,28 @@
               "summary": "OpenAI introduced GPT-4o as a new flagship model and described improvements across text, voice, and vision.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
               "interpretation": "This is a later public product and model milestone that can be expanded with system-card evidence.",
+              "capability_implication": "The product direction moves toward more fluid interaction across text, voice, and vision.",
+              "reliability_note": "The announcement is an official capability claim. A fuller record should add system-card evidence and reviewed demonstrations.",
+              "social_implication": null,
+              "related_events": [
+                "gpt-4-announced"
+              ],
+              "open_questions": [
+                "How consistently do multimodal improvements transfer into real-world workflows?"
+              ],
               "sources": [
                 {
                   "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
                   "title": "Introducing GPT-4o and more tools to ChatGPT free users",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -215,13 +332,26 @@
               "summary": "OpenAI released the first preview models in its o1 series in ChatGPT and the API, describing them as models designed to spend more time thinking before responding.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
               "interpretation": "This introduces a public reasoning-model branch in the product timeline.",
+              "capability_implication": "The public model line adds a reasoning-oriented branch designed to spend more time on a response.",
+              "reliability_note": "The preview label matters: this record marks a public release, not a conclusion about general reliability.",
+              "social_implication": null,
+              "related_events": [
+                "gpt-4o-announced"
+              ],
+              "open_questions": [],
               "sources": [
                 {
                   "url": "https://openai.com/index/introducing-openai-o1-preview/",
                   "title": "Introducing OpenAI o1-preview",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
@@ -234,13 +364,29 @@
               "summary": "OpenAI introduced ChatGPT search with web answers that include links to relevant sources, initially for ChatGPT Plus and Team users and SearchGPT waitlist users.",
               "evidence_status": "verified",
               "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "product",
+                "capability"
+              ],
               "interpretation": "This event is directly relevant to a timeline project concerned with source trails and current web information.",
+              "capability_implication": "The product adds a web-information layer with inspectable outbound source links.",
+              "reliability_note": "Linked sources improve inspectability, but the presence of citations does not by itself verify every generated claim.",
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-plugins-alpha",
+                "o1-preview-released"
+              ],
+              "open_questions": [
+                "How should readers evaluate source quality and claim-to-source alignment in generated answers?"
+              ],
               "sources": [
                 {
                   "url": "https://openai.com/index/introducing-chatgpt-search/",
                   "title": "Introducing ChatGPT search",
                   "publisher": "OpenAI",
-                  "type": "primary",
+                  "type": "official_announcement",
                   "accessed": "2026-06-01"
                 }
               ]
