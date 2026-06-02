@@ -54,3 +54,6 @@ linking to a visual example:
 - reveal detail on demand without overwhelming the initial view
 - connect intelligence to everyday experience without requiring another
   complicated interface
+
+See [`visual-structure-pass.md`](visual-structure-pass.md) for the concrete
+layout analysis and recommended combined structure.

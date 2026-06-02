@@ -86,6 +86,8 @@ See [`docs/presentation.md`](docs/presentation.md) for the presentation contract
 and the reusable editorial direction recovered from an earlier timeline draft.
 See [`docs/visual-reference-map.md`](docs/visual-reference-map.md) for the
 verified visual reference and unresolved provenance notes.
+See [`docs/visual-structure-pass.md`](docs/visual-structure-pass.md) for the
+Chrome-inspected layout analysis and implementation rules.
 
 See [`docs/alignment-principles.md`](docs/alignment-principles.md) for the
 product principles distilled from the approved private archive without
