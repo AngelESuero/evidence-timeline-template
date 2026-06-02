@@ -392,6 +392,207 @@
               ]
             }
           ]
+        },
+        {
+          "year": "2025",
+          "events": [
+            {
+              "id": "operator-research-preview",
+              "date": "2025-01-23",
+              "date_precision": "day",
+              "title": "Operator launches as a research preview",
+              "summary": "OpenAI introduced Operator as a research preview of an agent that can use its own browser to perform tasks by typing, clicking, and scrolling.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "This is a useful marker in the shift from conversational assistance toward agents acting through interfaces people already use.",
+              "capability_implication": "Operator adds visual browser interaction through cursor and keyboard actions.",
+              "reliability_note": "OpenAI labels Operator a research preview and documents mistakes, prompt injections, and harmful-task risks in the accompanying system card.",
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-search-introduced"
+              ],
+              "open_questions": [
+                "Which classes of browser tasks remain reliable enough for routine delegated use?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-operator/",
+                  "title": "Introducing Operator",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-01-23",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Operator research-preview launch and browser-interaction description",
+                  "archive_status": "live"
+                },
+                {
+                  "url": "https://openai.com/index/operator-system-card",
+                  "title": "Operator System Card",
+                  "publisher": "OpenAI",
+                  "type": "official_system_card",
+                  "published": "2025-01-23",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Operator safety evaluation and deployment mitigations",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "deep-research-introduced",
+              "date": "2025-02-02",
+              "date_precision": "day",
+              "title": "Deep research is introduced",
+              "summary": "OpenAI introduced deep research in ChatGPT as an agentic capability for multi-step research tasks that uses web browsing and Python tools.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "This extends source-oriented search into longer-running research workflows.",
+              "capability_implication": "The product can carry out multi-step web research with tool use rather than only returning a single search response.",
+              "reliability_note": "Research output still requires source inspection and claim-level review.",
+              "social_implication": null,
+              "related_events": [
+                "chatgpt-search-introduced",
+                "operator-research-preview"
+              ],
+              "open_questions": [
+                "How consistently do generated reports align each material claim with the strongest available source?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-deep-research/",
+                  "title": "Introducing deep research",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-02-02",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Deep research launch and tool-use description",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "gpt-4-5-research-preview",
+              "date": "2025-02-27",
+              "date_precision": "day",
+              "title": "GPT-4.5 enters research preview",
+              "summary": "OpenAI released GPT-4.5 as a research preview and described it as its largest and best model for chat at the time.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "The release documents a parallel capability path based on scaling pre-training rather than the reasoning-model branch alone.",
+              "capability_implication": "OpenAI presents unsupervised learning and reasoning as complementary axes of model capability.",
+              "reliability_note": "OpenAI described the release as a research preview and noted that GPT-4.5 did not support Voice Mode, video, or screensharing in ChatGPT at launch.",
+              "social_implication": null,
+              "related_events": [
+                "gpt-4o-announced",
+                "o1-preview-released"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-gpt-4-5/",
+                  "title": "Introducing GPT-4.5",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-02-27",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "GPT-4.5 research-preview release and stated product limitations",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "gpt-4-1-api-launch",
+              "date": "2025-04-14",
+              "date_precision": "day",
+              "title": "GPT-4.1 launches in the API",
+              "summary": "OpenAI launched GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano in the API, highlighting improvements in coding, instruction following, and long-context comprehension.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "release",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "This is a developer-platform milestone that adds a long-context model family and a smaller nano tier.",
+              "capability_implication": "The announcement emphasizes coding, instruction following, and context windows up to one million tokens.",
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [
+                "openai-api-private-beta",
+                "gpt-4-5-research-preview"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/gpt-4-1/",
+                  "title": "Introducing GPT-4.1 in the API",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-04-14",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "GPT-4.1 API-family launch and stated capability improvements",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "o3-o4-mini-release",
+              "date": "2025-04-16",
+              "date_precision": "day",
+              "title": "OpenAI releases o3 and o4-mini",
+              "summary": "OpenAI released o3 and o4-mini as reasoning models with access to tools in ChatGPT and function calling in the API.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "This is a stronger bridge between reasoning models and agentic tool use.",
+              "capability_implication": "The models can reason about when and how to use tools including web search, files, Python, visual inputs, and image generation.",
+              "reliability_note": "OpenAI reports improved performance and accompanying safety evaluation; benchmark gains do not establish reliability across every workflow.",
+              "social_implication": null,
+              "related_events": [
+                "o1-preview-released",
+                "gpt-4-1-api-launch",
+                "deep-research-introduced"
+              ],
+              "open_questions": [
+                "Which tool-using workflows remain brittle despite improved benchmark performance?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+                  "title": "Introducing OpenAI o3 and o4-mini",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-04-16",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "o3 and o4-mini release, reasoning, and tool-use description",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

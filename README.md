@@ -81,6 +81,9 @@ Run `npm run export:presentation` to create a public, year-grouped
 `dist/presentation.json` adapter from reviewed timeline data. This keeps visual
 interfaces separate from ingestion and review logic.
 
+Run `npm run export:sources` to create `dist/sources.json`, a deduplicated
+public source registry with references back to each timeline event.
+
 See [`docs/presentation.md`](docs/presentation.md) for the presentation contract
 and the reusable editorial direction recovered from an earlier timeline draft.
 See [`docs/visual-reference-map.md`](docs/visual-reference-map.md) for the

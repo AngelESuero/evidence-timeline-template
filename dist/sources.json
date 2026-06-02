@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-06-01T00:00:00.000Z",
+  "sources": [
+    {
+      "url": "https://openai.com/blog/chatgpt-plugins",
+      "title": "ChatGPT plugins",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "note": "The official page now notes that OpenAI plugins have been deprecated.",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-plugins-alpha"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/dall-e",
+      "title": "DALL-E: Creating images from text",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "dall-e-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4-research/",
+      "title": "GPT-4",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/chatgpt/",
+      "title": "Introducing ChatGPT",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-public-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-search/",
+      "title": "Introducing ChatGPT search",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-search-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-deep-research/",
+      "title": "Introducing deep research",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-02-02",
+      "accessed": "2026-06-01",
+      "claim_scope": "Deep research launch and tool-use description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "deep-research-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4-1/",
+      "title": "Introducing GPT-4.1 in the API",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-04-14",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-4.1 API-family launch and stated capability improvements",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-1-api-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-4-5/",
+      "title": "Introducing GPT-4.5",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-02-27",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-4.5 research-preview release and stated product limitations",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-5-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+      "title": "Introducing GPT-4o and more tools to ChatGPT free users",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4o-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai/",
+      "title": "Introducing OpenAI",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "openai-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai-o1-preview/",
+      "title": "Introducing OpenAI o1-preview",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "o1-preview-released"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "title": "Introducing OpenAI o3 and o4-mini",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-04-16",
+      "accessed": "2026-06-01",
+      "claim_scope": "o3 and o4-mini release, reasoning, and tool-use description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "o3-o4-mini-release"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-operator/",
+      "title": "Introducing Operator",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-01-23",
+      "accessed": "2026-06-01",
+      "claim_scope": "Operator research-preview launch and browser-interaction description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-the-gpt-store/",
+      "title": "Introducing the GPT Store",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-store-rollout"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+      "title": "New models and developer products announced at DevDay",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "devday-gpt-4-turbo-assistants-api"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/blog/openai-api/",
+      "title": "OpenAI API",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "accessed": "2026-06-01",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "openai-api-private-beta"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/operator-system-card",
+      "title": "Operator System Card",
+      "publisher": "OpenAI",
+      "type": "official_system_card",
+      "published": "2025-01-23",
+      "accessed": "2026-06-01",
+      "claim_scope": "Operator safety evaluation and deployment mitigations",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "operator-research-preview"
+        }
+      ]
+    }
+  ]
+}

@@ -60,12 +60,20 @@ function validateTimeline(timeline, filename) {
   if (!Array.isArray(timeline.events)) return errors;
 
   const ids = new Set();
+  const sourceUrls = new Map();
   for (const [index, event] of timeline.events.entries()) {
     const label = `${filename}: events[${index}]`;
     errors.push(...validateEvent(event, label));
     if (ids.has(event.id)) errors.push(`${label}.id duplicates ${event.id}`);
     ids.add(event.id);
     if (event.evidence_status === "proposed") errors.push(`${label}.evidence_status must leave the proposal queue before publication`);
+    for (const source of event.sources ?? []) {
+      const previous = sourceUrls.get(source.url);
+      if (previous && (previous.title !== source.title || previous.publisher !== source.publisher || previous.type !== source.type)) {
+        errors.push(`${label}.sources contains conflicting metadata for ${source.url}`);
+      }
+      sourceUrls.set(source.url, source);
+    }
   }
   return errors;
 }

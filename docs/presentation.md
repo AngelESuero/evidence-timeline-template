@@ -5,6 +5,7 @@ The evidence engine and the visual timeline are separate layers.
 - `data/timelines/*.json` contains reviewed events and citations.
 - `data/proposals/*.json` contains material awaiting review.
 - `dist/presentation.json` is a public, year-grouped adapter for presentation layers.
+- `dist/sources.json` is a deduplicated public registry of cited source URLs.
 - `private/` contains approved working archives and never enters the public export.
 
 Run:
