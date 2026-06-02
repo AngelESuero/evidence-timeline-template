@@ -2,6 +2,22 @@
   "generated_at": "2026-06-01T00:00:00.000Z",
   "sources": [
     {
+      "url": "https://cdn.openai.com/pdf/97cc5669-7a25-4e63-b15f-5fd5bdc4d149/gpt-5-codex-system-card.pdf",
+      "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+      "publisher": "OpenAI",
+      "type": "official_system_card",
+      "published": "2025-09-15",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-5-Codex evaluation addendum",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-codex-release"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/chatgpt-agent-system-card/",
       "title": "ChatGPT agent System Card",
       "publisher": "OpenAI",
@@ -70,6 +86,22 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "gpt-5-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-canvas/",
+      "title": "Introducing canvas",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2024-10-03",
+      "accessed": "2026-06-01",
+      "claim_scope": "Canvas beta launch and interface description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "canvas-beta-introduced"
         }
       ]
     },
@@ -264,6 +296,22 @@
       ]
     },
     {
+      "url": "https://openai.com/index/introducing-upgrades-to-codex/",
+      "title": "Introducing upgrades to Codex",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-09-15",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-5-Codex release and Codex product integration",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-codex-release"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
       "title": "New models and developer products announced at DevDay",
       "publisher": "OpenAI",
@@ -273,6 +321,38 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "devday-gpt-4-turbo-assistants-api"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
+      "title": "New tools and features in the Responses API",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-05-21",
+      "accessed": "2026-06-01",
+      "claim_scope": "Responses API MCP support, tool expansion, and reliability features",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "responses-api-tools-expanded"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-tools-for-building-agents/",
+      "title": "New tools for building agents",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-03-11",
+      "accessed": "2026-06-01",
+      "claim_scope": "Responses API, built-in tools, Agents SDK, and tracing launch",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "responses-api-agents-sdk-launch"
         }
       ]
     },
@@ -302,6 +382,23 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/blog/sora-is-here/",
+      "title": "Sora is here",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2024-12-09",
+      "accessed": "2026-06-01",
+      "claim_scope": "Sora Turbo product rollout and lifecycle note",
+      "archive_status": "live",
+      "note": "The official page states that the Sora product is no longer available as of April 26, 2026.",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "sora-product-rollout"
         }
       ]
     }

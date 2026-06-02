@@ -27,11 +27,13 @@ npm run propose -- \
   --source-url "https://example.com/source" \
   --source-title "Example source" \
   --source-publisher "Example publisher" \
-  --source-type personal_archive \
+  --source-type official_announcement \
   --accessed 2026-06-01
 ```
 
 The command always writes a `needs_review` proposal. It does not publish the event.
+
+Use `personal_archive` only when the explicitly approved input is private.
 
 ## Personal Archives
 

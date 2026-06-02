@@ -249,6 +249,33 @@
       "related_events": ["gpt-4o-announced"]
     },
     {
+      "id": "canvas-beta-introduced",
+      "date": "2024-10-03",
+      "date_precision": "day",
+      "title": "Canvas enters beta",
+      "summary": "OpenAI introduced canvas as an interface for collaborating with ChatGPT on writing and coding projects beyond a simple chat thread.",
+      "record_type": "product_change",
+      "timeline_lanes": ["chronology", "product"],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-canvas/",
+          "title": "Introducing canvas",
+          "publisher": "OpenAI",
+          "type": "official_announcement",
+          "published": "2024-10-03",
+          "accessed": "2026-06-01",
+          "claim_scope": "Canvas beta launch and interface description",
+          "archive_status": "live"
+        }
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "interpretation": "Canvas is a useful interface milestone: the product expands from conversational exchange into a shared workspace.",
+      "capability_implication": "The interface supports iterative writing and coding collaboration in a separate working surface.",
+      "disputes": [],
+      "related_events": ["chatgpt-public-launch", "gpt-4o-announced"]
+    },
+    {
       "id": "chatgpt-search-introduced",
       "date": "2024-10-31",
       "date_precision": "day",
@@ -273,6 +300,35 @@
       "interpretation": "This event is directly relevant to a timeline project concerned with source trails and current web information.",
       "disputes": [],
       "related_events": ["chatgpt-plugins-alpha", "o1-preview-released"]
+    },
+    {
+      "id": "sora-product-rollout",
+      "date": "2024-12-09",
+      "date_precision": "day",
+      "title": "Sora rolls out as a standalone product",
+      "summary": "OpenAI moved its video-generation model out of research preview and began rolling out Sora Turbo at sora.com for ChatGPT Plus and Pro users.",
+      "record_type": "release",
+      "timeline_lanes": ["chronology", "capability", "product"],
+      "sources": [
+        {
+          "url": "https://openai.com/blog/sora-is-here/",
+          "title": "Sora is here",
+          "publisher": "OpenAI",
+          "type": "official_announcement",
+          "published": "2024-12-09",
+          "accessed": "2026-06-01",
+          "claim_scope": "Sora Turbo product rollout and lifecycle note",
+          "archive_status": "live",
+          "note": "The official page states that the Sora product is no longer available as of April 26, 2026."
+        }
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "interpretation": "This records both a product launch and the importance of retaining lifecycle changes rather than treating launches as permanent states.",
+      "capability_implication": "Video generation moves from research preview into a standalone product experience.",
+      "reliability_note": "The official page records safety restrictions and a later product-status change.",
+      "disputes": [],
+      "related_events": ["dall-e-announced", "gpt-4o-announced"]
     },
     {
       "id": "operator-research-preview",
@@ -371,6 +427,35 @@
       "related_events": ["gpt-4o-announced", "o1-preview-released"]
     },
     {
+      "id": "responses-api-agents-sdk-launch",
+      "date": "2025-03-11",
+      "date_precision": "day",
+      "title": "Responses API and Agents SDK launch",
+      "summary": "OpenAI released the Responses API, built-in web search, file search and computer-use tools, the Agents SDK, and tracing tools for agentic applications.",
+      "record_type": "product_change",
+      "timeline_lanes": ["chronology", "capability", "product"],
+      "sources": [
+        {
+          "url": "https://openai.com/index/new-tools-for-building-agents/",
+          "title": "New tools for building agents",
+          "publisher": "OpenAI",
+          "type": "official_announcement",
+          "published": "2025-03-11",
+          "accessed": "2026-06-01",
+          "claim_scope": "Responses API, built-in tools, Agents SDK, and tracing launch",
+          "archive_status": "live"
+        }
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "interpretation": "This is a major developer-platform milestone for building inspectable agent workflows.",
+      "capability_implication": "Developers gain a common API primitive with built-in tools, orchestration, guardrails, and execution tracing.",
+      "reliability_note": "The announcement frames production reliability and visibility as active engineering concerns, not solved assumptions.",
+      "open_questions": ["How should agent traces be archived so later timelines can distinguish model capability from orchestration quality?"],
+      "disputes": [],
+      "related_events": ["openai-api-private-beta", "operator-research-preview", "deep-research-introduced"]
+    },
+    {
       "id": "gpt-4-1-api-launch",
       "date": "2025-04-14",
       "date_precision": "day",
@@ -425,6 +510,34 @@
       "open_questions": ["Which tool-using workflows remain brittle despite improved benchmark performance?"],
       "disputes": [],
       "related_events": ["o1-preview-released", "gpt-4-1-api-launch", "deep-research-introduced"]
+    },
+    {
+      "id": "responses-api-tools-expanded",
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "title": "Responses API adds MCP and more built-in tools",
+      "summary": "OpenAI added remote MCP server support, image generation, Code Interpreter, file-search improvements, background mode, reasoning summaries, and encrypted reasoning items to the Responses API.",
+      "record_type": "product_change",
+      "timeline_lanes": ["chronology", "capability", "product"],
+      "sources": [
+        {
+          "url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
+          "title": "New tools and features in the Responses API",
+          "publisher": "OpenAI",
+          "type": "official_announcement",
+          "published": "2025-05-21",
+          "accessed": "2026-06-01",
+          "claim_scope": "Responses API MCP support, tool expansion, and reliability features",
+          "archive_status": "live"
+        }
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "interpretation": "The agent platform becomes more interoperable and better suited to long-running work.",
+      "capability_implication": "Agentic applications can connect remote MCP servers and use a broader set of built-in tools.",
+      "reliability_note": "Background mode and observability-related features matter because longer workflows need recoverability and inspection.",
+      "disputes": [],
+      "related_events": ["responses-api-agents-sdk-launch", "o3-o4-mini-release"]
     },
     {
       "id": "chatgpt-agent-introduced",
@@ -503,6 +616,45 @@
       "open_questions": ["How should a public timeline represent routed systems when model behavior changes by task and deployment state?"],
       "disputes": [],
       "related_events": ["gpt-4-5-research-preview", "gpt-4-1-api-launch", "o3-o4-mini-release"]
+    },
+    {
+      "id": "gpt-5-codex-release",
+      "date": "2025-09-15",
+      "date_precision": "day",
+      "title": "GPT-5-Codex is released",
+      "summary": "OpenAI released GPT-5-Codex as a version of GPT-5 optimized for agentic coding in Codex.",
+      "record_type": "capability_signal",
+      "timeline_lanes": ["chronology", "capability", "product"],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-upgrades-to-codex/",
+          "title": "Introducing upgrades to Codex",
+          "publisher": "OpenAI",
+          "type": "official_announcement",
+          "published": "2025-09-15",
+          "accessed": "2026-06-01",
+          "claim_scope": "GPT-5-Codex release and Codex product integration",
+          "archive_status": "live"
+        },
+        {
+          "url": "https://cdn.openai.com/pdf/97cc5669-7a25-4e63-b15f-5fd5bdc4d149/gpt-5-codex-system-card.pdf",
+          "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+          "publisher": "OpenAI",
+          "type": "official_system_card",
+          "published": "2025-09-15",
+          "accessed": "2026-06-01",
+          "claim_scope": "GPT-5-Codex evaluation addendum",
+          "archive_status": "live"
+        }
+      ],
+      "evidence_status": "verified",
+      "confidence": "high",
+      "interpretation": "This is a domain-specific agentic-coding milestone within the broader routed-system and agent-platform trajectory.",
+      "capability_implication": "OpenAI describes GPT-5-Codex as supporting both interactive coding and longer independent software-engineering tasks.",
+      "reliability_note": "The official release describes improved code review and longer task execution; the accompanying system-card addendum remains the appropriate evaluation companion.",
+      "open_questions": ["How should coding-agent timelines distinguish benchmark improvements from verified repository-level outcomes?"],
+      "disputes": [],
+      "related_events": ["responses-api-tools-expanded", "gpt-5-introduced"]
     }
   ]
 }

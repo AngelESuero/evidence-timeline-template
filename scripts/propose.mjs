@@ -7,7 +7,7 @@ const proposalDir = path.join(root, "data", "proposals");
 const idPattern = /^[a-z0-9-]+$/;
 const datePattern = /^\d{4}(-\d{2})?(-\d{2})?$/;
 const allowedPrecision = new Set(["day", "month", "year", "range", "estimated"]);
-const allowedSourceTypes = new Set(["primary", "official_interpretive", "reporting", "commentary", "personal_archive"]);
+const allowedSourceTypes = new Set(["official_announcement", "official_research", "official_system_card", "official_product_documentation", "official_legal_or_policy_document", "frontier_voice_post", "frontier_voice_talk", "external_reporting", "independent_research", "public_commentary", "personal_archive"]);
 
 function parseArgs(values) {
   const result = {};
@@ -86,4 +86,3 @@ await mkdir(proposalDir, { recursive: true });
 const outputPath = path.join(proposalDir, `${proposalId}.json`);
 await writeFile(outputPath, `${JSON.stringify(proposal, null, 2)}\n`, { flag: "wx" });
 console.log(`Staged ${path.relative(root, outputPath)} for review.`);
-

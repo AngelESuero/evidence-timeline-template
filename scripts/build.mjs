@@ -16,6 +16,8 @@ const lanes = (event) => event.timeline_lanes ?? ["chronology"];
 
 const files = (await readdir(timelineDir)).filter((name) => name.endsWith(".json")).sort();
 const timelines = await Promise.all(files.map(async (filename) => JSON.parse(await readFile(path.join(timelineDir, filename), "utf8"))));
+const allSources = [...new Map(timelines.flatMap((timeline) => timeline.events.flatMap((event) => event.sources.map((source) => [source.url, source])))).values()]
+  .sort((a, b) => a.publisher.localeCompare(b.publisher) || a.title.localeCompare(b.title));
 
 const timelineMarkup = timelines.map((timeline) => `
   <section class="timeline" aria-labelledby="${escapeHtml(timeline.id)}-title">
@@ -31,6 +33,10 @@ const timelineMarkup = timelines.map((timeline) => `
     <nav class="lane-filters" aria-label="Timeline views">
       ${["all", "chronology", "capability", "product", "frontier_voices", "social_transition", "disputes"].map((lane) => `<button class="lane-filter${lane === "all" ? " active" : ""}" type="button" data-lane="${lane}">${escapeHtml(label(lane))}</button>`).join("")}
     </nav>
+    <nav class="year-nav" aria-label="Timeline years">
+      <span>Jump to year</span>
+      ${[...new Set(timeline.events.map((event) => event.date.slice(0, 4)))].map((year) => `<a href="#year-${escapeHtml(year)}">${escapeHtml(year)}</a>`).join("")}
+    </nav>
     <div class="search-tools">
       <label>
         <span>Search records</span>
@@ -45,7 +51,8 @@ const timelineMarkup = timelines.map((timeline) => `
       </label>
     </div>
     <ol class="records">
-      ${[...timeline.events].sort((a, b) => a.date.localeCompare(b.date)).map((event) => `
+      ${[...timeline.events].sort((a, b) => a.date.localeCompare(b.date)).map((event, index, events) => `
+      ${index === 0 || events[index - 1].date.slice(0, 4) !== event.date.slice(0, 4) ? `<li class="year-marker" id="year-${escapeHtml(event.date.slice(0, 4))}"><span>${escapeHtml(event.date.slice(0, 4))}</span></li>` : ""}
       <li class="record-shell" data-lanes="${escapeHtml(lanes(event).join(" "))}" data-source-types="${escapeHtml(event.sources.map((source) => source.type).join(" "))}" data-search="${escapeHtml([event.title, event.summary, event.interpretation, event.capability_implication, event.reliability_note, event.social_implication].filter(Boolean).join(" ").toLowerCase())}">
         <article class="record" id="${escapeHtml(event.id)}">
           <header class="record-meta">
@@ -83,6 +90,18 @@ const timelineMarkup = timelines.map((timeline) => `
     </ol>
   </section>`).join("");
 
+const sourceMarkup = `
+  <section class="source-register" id="source-register" aria-labelledby="source-register-title">
+    <header class="timeline-intro">
+      <p class="eyebrow">Public source register</p>
+      <h2 id="source-register-title">Inspect the evidence catalog.</h2>
+      <p>Each cited URL appears once here. Event cards preserve the claim-level context.</p>
+    </header>
+    <div class="source-register-grid">
+      ${allSources.map((source) => `<article class="source-card"><p>${escapeHtml(label(source.type))}</p><h3><a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a></h3><small>${escapeHtml(source.publisher)} · accessed ${escapeHtml(source.accessed)}</small>${source.claim_scope ? `<small>${escapeHtml(source.claim_scope)}</small>` : ""}</article>`).join("")}
+    </div>
+  </section>`;
+
 const html = `<!doctype html>
 <html lang="en">
 <head>
@@ -109,12 +128,16 @@ const html = `<!doctype html>
     .lane-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 28px; }
     .lane-filter { padding: 7px 10px; border: 1px solid #343431; color: #aaa9a2; background: transparent; cursor: pointer; font: inherit; font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; transition: .2s ease; }
     .lane-filter:hover, .lane-filter.active { border-color: #d4d4ce; color: #f4f4f0; background: #171716; }
+    .year-nav { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin: -12px 0 28px; color: #989890; font-size: .67rem; letter-spacing: .09em; text-transform: uppercase; }
+    .year-nav span { margin-right: 3px; }
+    .year-nav a { color: #b8b8b1; }
     .search-tools { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 260px); gap: 12px; margin: 0 0 28px; }
     .search-tools label { display: grid; gap: 7px; color: #989890; font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; }
     .search-tools input, .search-tools select { min-height: 38px; padding: 8px 10px; border: 1px solid #343431; border-radius: 0; color: #e8e8e3; background: #0d0d0d; font: inherit; font-size: .82rem; letter-spacing: 0; outline: none; text-transform: none; }
     .search-tools input:focus, .search-tools select:focus { border-color: #d4d4ce; }
     .records { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
     .record-shell[hidden] { display: none; }
+    .year-marker { padding: 22px 0 2px; color: #e8e8e3; font-family: Georgia, 'Times New Roman', serif; font-size: 2rem; list-style: none; scroll-margin-top: 18px; }
     .record { min-height: 208px; padding: 24px 26px 22px; border: 1px solid #2b2b29; background: #0d0d0d; transition: border-color .2s ease, background .2s ease; }
     .record:hover, .record:target { border-color: #5b5b56; background: #111; }
     .record-meta, .record-meta > div, .record-footer, .labels { display: flex; align-items: center; }
@@ -144,6 +167,11 @@ const html = `<!doctype html>
     small { display: block; margin-top: 3px; color: #8d8d87; }
     .labels { flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
     .labels span { padding: 4px 8px; border: 1px solid #343431; color: #a5a59e; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+    .source-register { margin-top: 112px; padding-top: 56px; border-top: 1px solid #2b2b29; }
+    .source-register-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #2b2b29; border: 1px solid #2b2b29; }
+    .source-card { min-height: 150px; padding: 18px; background: #0d0d0d; }
+    .source-card p { margin: 0; color: #989890; font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; }
+    .source-card h3 { margin: 18px 0 12px; font-size: 1.35rem; }
     @media (max-width: 680px) {
       main { padding: 54px 16px 80px; }
       .masthead { padding-bottom: 62px; text-align: left; }
@@ -156,6 +184,7 @@ const html = `<!doctype html>
       .labels { justify-content: flex-start; margin-top: 20px; }
       .detail-grid { grid-template-columns: 1fr; gap: 16px; }
       .search-tools { grid-template-columns: 1fr; }
+      .source-register-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -167,6 +196,7 @@ const html = `<!doctype html>
       <p class="lede">A timeline is not an authority. It is an inspectable map of the evidence available at a particular moment.</p>
     </header>
     ${timelineMarkup}
+    ${sourceMarkup}
   </main>
 </body>
 <script>

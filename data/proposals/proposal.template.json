@@ -8,6 +8,8 @@
     "date_precision": "day",
     "title": "Replace me",
     "summary": "Write a narrow factual claim supported by the source.",
+    "record_type": "proposal",
+    "timeline_lanes": ["chronology"],
     "sources": [
       {
         "url": "https://example.com/source",
@@ -28,4 +30,3 @@
     "Confirm publication permission before moving personal archive material into a public timeline."
   ]
 }
-
