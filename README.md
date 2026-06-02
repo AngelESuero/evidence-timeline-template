@@ -34,6 +34,11 @@ publishing token is authorized for workflow changes. Until then, run
 private-archive leak markers, exports registries, audits stored source lifecycle
 metadata, and rebuilds the static site.
 
+Run `npm run audit:urls` separately when network access is available. It writes
+`dist/source-url-audit.json`, a bounded live HTTP report. URL reachability is
+useful evidence, but it does not prove that a page still supports the cited
+claim.
+
 ## Structure
 
 ```text

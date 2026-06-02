@@ -7,6 +7,7 @@
     "build": "node scripts/build.mjs",
     "export:sources": "node scripts/export-sources.mjs",
     "report:sources": "node scripts/report-source-health.mjs",
+    "audit:urls": "node scripts/audit-source-urls.mjs",
     "export:presentation": "node scripts/export-presentation.mjs",
     "check:public": "node scripts/check-public-leaks.mjs",
     "extract:x": "node scripts/extract-x-archive.mjs",

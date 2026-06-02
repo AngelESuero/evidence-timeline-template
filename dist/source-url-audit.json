@@ -1,0 +1,513 @@
+{
+  "checked_at": "2026-06-02T00:52:04.696Z",
+  "mode": "live_http_audit",
+  "note": "This report records a bounded live HTTP check. A reachable URL does not prove that its content still supports the cited claim.",
+  "timeout_ms": 10000,
+  "concurrency": 4,
+  "summary": {
+    "reachable": 35,
+    "http_error": 0,
+    "timeout": 0,
+    "network_error": 0
+  },
+  "results": [
+    {
+      "url": "https://cdn.openai.com/pdf/97cc5669-7a25-4e63-b15f-5fd5bdc4d149/gpt-5-codex-system-card.pdf",
+      "final_url": "https://cdn.openai.com/pdf/97cc5669-7a25-4e63-b15f-5fd5bdc4d149/gpt-5-codex-system-card.pdf",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-codex-release"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/blog/chatgpt-plugins",
+      "final_url": "https://openai.com/index/chatgpt-plugins/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-plugins-alpha"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/blog/openai-api/",
+      "final_url": "https://openai.com/index/openai-api/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "openai-api-private-beta"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/blog/sora-is-here/",
+      "final_url": "https://openai.com/index/sora-is-here/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "sora-product-rollout"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/chatgpt-agent-system-card/",
+      "final_url": "https://openai.com/index/chatgpt-agent-system-card/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-agent-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/chatgpt/",
+      "final_url": "https://openai.com/index/chatgpt/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-public-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/dall-e",
+      "final_url": "https://openai.com/index/dall-e/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "dall-e-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4-1/",
+      "final_url": "https://openai.com/index/gpt-4-1/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-1-api-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4-research/",
+      "final_url": "https://openai.com/index/gpt-4-research/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+      "final_url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4o-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4o-system-card/",
+      "final_url": "https://openai.com/index/gpt-4o-system-card/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4o-system-card-published"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-5-system-card/",
+      "final_url": "https://openai.com/index/gpt-5-system-card/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/instruction-following/",
+      "final_url": "https://openai.com/index/instruction-following/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "instructgpt-method-published"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-canvas/",
+      "final_url": "https://openai.com/index/introducing-canvas/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "canvas-beta-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "final_url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-agent-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-search/",
+      "final_url": "https://openai.com/index/introducing-chatgpt-search/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-search-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-deep-research/",
+      "final_url": "https://openai.com/index/introducing-deep-research/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "deep-research-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-4-5/",
+      "final_url": "https://openai.com/index/introducing-gpt-4-5/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4-5-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5/",
+      "final_url": "https://openai.com/index/introducing-gpt-5/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "final_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "o3-o4-mini-release"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai-o1-preview/",
+      "final_url": "https://openai.com/index/introducing-openai-o1-preview/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "o1-preview-released"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-openai/",
+      "final_url": "https://openai.com/index/introducing-openai/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "openai-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-operator/",
+      "final_url": "https://openai.com/index/introducing-operator/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-the-gpt-store/",
+      "final_url": "https://openai.com/index/introducing-the-gpt-store/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-store-rollout"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-the-model-spec/",
+      "final_url": "https://openai.com/index/introducing-the-model-spec/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "model-spec-introduced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-upgrades-to-codex/",
+      "final_url": "https://openai.com/index/introducing-upgrades-to-codex/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-codex-release"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+      "final_url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "devday-gpt-4-turbo-assistants-api"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
+      "final_url": "https://openai.com/index/new-tools-and-features-in-the-responses-api/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "responses-api-tools-expanded"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/new-tools-for-building-agents/",
+      "final_url": "https://openai.com/index/new-tools-for-building-agents/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "responses-api-agents-sdk-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/operator-system-card",
+      "final_url": "https://openai.com/index/operator-system-card/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "final_url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "model-spec-updated"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/Consortium/facts.html",
+      "final_url": "https://www.w3.org/about/history/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": true,
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "w3c-founded"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/History/1989/proposal.html",
+      "final_url": "https://www.w3.org/History/1989/proposal.html",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "www-proposal"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/news/2023/web-content-accessibility-guidelines-wcag-2-2-is-a-w3c-recommendation/",
+      "final_url": "https://www.w3.org/news/2023/web-content-accessibility-guidelines-wcag-2-2-is-a-w3c-recommendation/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-2-published"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "final_url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-0-published"
+        },
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-1-published"
+        },
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-2-published"
+        }
+      ]
+    }
+  ]
+}
