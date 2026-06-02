@@ -92,6 +92,9 @@ Chrome-inspected layout analysis and implementation rules.
 See [`docs/alignment-principles.md`](docs/alignment-principles.md) for the
 product principles distilled from the approved private archive without
 publishing private post text.
+See [`docs/openai-timeline-information-architecture.md`](docs/openai-timeline-information-architecture.md)
+for the OpenAI-specific record structure, source register, views, and build
+sequence distilled from the archive.
 
 ## Publishing
 
