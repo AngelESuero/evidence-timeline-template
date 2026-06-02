@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-02T00:54:59.229Z",
+  "checked_at": "2026-06-02T00:57:45.935Z",
   "mode": "live_http_audit",
   "note": "This report records a bounded live HTTP check. A reachable URL does not prove that its content still supports the cited claim.",
   "timeout_ms": 10000,
@@ -20,7 +20,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-codex-release"
         }
       ]
@@ -34,7 +34,7 @@
       "redirected": true,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-plugins-alpha"
         }
       ]
@@ -48,7 +48,7 @@
       "redirected": true,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "openai-api-private-beta"
         }
       ]
@@ -62,7 +62,7 @@
       "redirected": true,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "sora-product-rollout"
         }
       ]
@@ -76,7 +76,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-agent-introduced"
         }
       ]
@@ -90,7 +90,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-public-launch"
         }
       ]
@@ -104,7 +104,7 @@
       "redirected": true,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "dall-e-announced"
         }
       ]
@@ -118,7 +118,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-1-api-launch"
         }
       ]
@@ -132,7 +132,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-announced"
         }
       ]
@@ -146,7 +146,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4o-announced"
         }
       ]
@@ -160,7 +160,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4o-system-card-published"
         }
       ]
@@ -174,7 +174,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-introduced"
         }
       ]
@@ -188,7 +188,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "instructgpt-method-published"
         }
       ]
@@ -202,7 +202,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "canvas-beta-introduced"
         }
       ]
@@ -216,7 +216,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-agent-introduced"
         }
       ]
@@ -230,7 +230,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-search-introduced"
         }
       ]
@@ -244,7 +244,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "deep-research-introduced"
         }
       ]
@@ -258,7 +258,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-5-research-preview"
         }
       ]
@@ -272,7 +272,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-introduced"
         }
       ]
@@ -286,7 +286,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "o3-o4-mini-release"
         }
       ]
@@ -300,7 +300,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "o1-preview-released"
         }
       ]
@@ -314,7 +314,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "openai-introduced"
         }
       ]
@@ -328,7 +328,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "operator-research-preview"
         }
       ]
@@ -342,7 +342,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-store-rollout"
         }
       ]
@@ -356,7 +356,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "model-spec-introduced"
         }
       ]
@@ -370,7 +370,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-codex-release"
         }
       ]
@@ -384,7 +384,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "devday-gpt-4-turbo-assistants-api"
         }
       ]
@@ -398,7 +398,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "responses-api-tools-expanded"
         }
       ]
@@ -412,7 +412,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "responses-api-agents-sdk-launch"
         }
       ]
@@ -426,7 +426,7 @@
       "redirected": true,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "operator-research-preview"
         }
       ]
@@ -440,7 +440,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "our-principles-sam-altman"
         }
       ]
@@ -454,7 +454,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "agi-planning-statement"
         }
       ]
@@ -468,7 +468,7 @@
       "redirected": false,
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "model-spec-updated"
         }
       ]

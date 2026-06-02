@@ -26,7 +26,7 @@ const report = {
     const events = timeline.events;
     const lanes = events.flatMap((event) => event.timeline_lanes ?? []);
     const sourceTypes = events.flatMap((event) => event.sources.map((source) => source.type));
-    const isOpenAiReference = timeline.id === "openai-seed";
+    const isOpenAiReference = timeline.id === "openai-reference";
     const missingViews = isOpenAiReference ? requiredOpenAiViews.filter((view) => !lanes.includes(view)) : [];
     return {
       id: timeline.id,

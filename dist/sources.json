@@ -12,7 +12,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-codex-release"
         }
       ]
@@ -28,7 +28,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "instructgpt-method-published"
         }
       ]
@@ -44,7 +44,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-agent-introduced"
         }
       ]
@@ -61,7 +61,7 @@
       "claim_scope": "ChatGPT plugins alpha rollout and later deprecation note",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-plugins-alpha"
         }
       ]
@@ -77,7 +77,7 @@
       "claim_scope": "DALL-E announcement and text-guided image-generation description",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "dall-e-announced"
         }
       ]
@@ -93,7 +93,7 @@
       "claim_scope": "GPT-4 announcement and multimodal-input description",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-announced"
         }
       ]
@@ -109,7 +109,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4o-system-card-published"
         }
       ]
@@ -125,7 +125,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-introduced"
         }
       ]
@@ -141,7 +141,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "canvas-beta-introduced"
         }
       ]
@@ -157,7 +157,7 @@
       "claim_scope": "ChatGPT public research-preview launch",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-public-launch"
         }
       ]
@@ -173,7 +173,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-agent-introduced"
         }
       ]
@@ -189,7 +189,7 @@
       "claim_scope": "ChatGPT search launch and outbound source-link behavior",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "chatgpt-search-introduced"
         }
       ]
@@ -205,7 +205,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "deep-research-introduced"
         }
       ]
@@ -221,7 +221,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-1-api-launch"
         }
       ]
@@ -237,7 +237,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4-5-research-preview"
         }
       ]
@@ -253,7 +253,7 @@
       "claim_scope": "GPT-4o launch and text, voice, and vision improvements",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-4o-announced"
         }
       ]
@@ -269,7 +269,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-introduced"
         }
       ]
@@ -285,7 +285,7 @@
       "claim_scope": "OpenAI institutional introduction and nonprofit research-company description",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "openai-introduced"
         }
       ]
@@ -301,7 +301,7 @@
       "claim_scope": "OpenAI o1-preview release and reasoning-model description",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "o1-preview-released"
         }
       ]
@@ -317,7 +317,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "o3-o4-mini-release"
         }
       ]
@@ -333,7 +333,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "operator-research-preview"
         }
       ]
@@ -349,7 +349,7 @@
       "claim_scope": "GPT Store rollout and eligible ChatGPT plans",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-store-rollout"
         }
       ]
@@ -365,7 +365,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "model-spec-introduced"
         }
       ]
@@ -381,7 +381,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "gpt-5-codex-release"
         }
       ]
@@ -397,7 +397,7 @@
       "claim_scope": "GPT-4 Turbo, Assistants API, and DevDay developer-platform announcements",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "devday-gpt-4-turbo-assistants-api"
         }
       ]
@@ -413,7 +413,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "responses-api-tools-expanded"
         }
       ]
@@ -429,7 +429,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "responses-api-agents-sdk-launch"
         }
       ]
@@ -445,7 +445,7 @@
       "claim_scope": "OpenAI API private-beta launch and general-purpose interface description",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "openai-api-private-beta"
         }
       ]
@@ -461,7 +461,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "operator-research-preview"
         }
       ]
@@ -479,7 +479,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "our-principles-sam-altman"
         }
       ]
@@ -498,7 +498,7 @@
       "note": "The official page states that its structural information was outdated as of October 28, 2025.",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "agi-planning-statement"
         }
       ]
@@ -514,7 +514,7 @@
       "archive_status": "live",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "model-spec-updated"
         }
       ]
@@ -531,7 +531,7 @@
       "note": "The official page states that the Sora product is no longer available as of April 26, 2026.",
       "references": [
         {
-          "timeline_id": "openai-seed",
+          "timeline_id": "openai-reference",
           "event_id": "sora-product-rollout"
         }
       ]

@@ -1,6 +1,6 @@
 {
   "proposal_id": "replace-me",
-  "target_timeline": "openai-seed",
+  "target_timeline": "openai-reference",
   "review_status": "needs_review",
   "candidate_event": {
     "id": "replace-me",

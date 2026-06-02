@@ -1,7 +1,7 @@
 {
-  "id": "openai-seed",
-  "title": "OpenAI: Public Milestones Seed Timeline",
-  "description": "A small official-source seed timeline. It is a starting point for reviewed expansion, not a comprehensive history.",
+  "id": "openai-reference",
+  "title": "OpenAI: Reviewed Public Reference Timeline",
+  "description": "A reviewed public-source reference timeline spanning institutional history, research, product evolution, system cards, governance statements, and attributable frontier voices. It is designed for inspectable expansion, not as a claim of exhaustive history.",
   "updated": "2026-06-01",
   "events": [
     {

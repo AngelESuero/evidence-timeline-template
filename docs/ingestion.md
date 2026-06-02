@@ -18,7 +18,7 @@ Use the local proposal CLI after choosing an explicitly approved source:
 ```bash
 npm run propose -- \
   --proposal-id example-event \
-  --target-timeline openai-seed \
+  --target-timeline openai-reference \
   --event-id example-event \
   --date 2026-06-01 \
   --date-precision day \

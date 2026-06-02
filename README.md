@@ -63,7 +63,7 @@ Each event records:
 - optional `interpretation`, capability, reliability, and social notes
 - optional `disputes`, `open_questions`, and `related_events`
 
-See [`schema/timeline.schema.json`](schema/timeline.schema.json), [`schema/proposal.schema.json`](schema/proposal.schema.json), and [`data/timelines/openai-seed.json`](data/timelines/openai-seed.json).
+See [`schema/timeline.schema.json`](schema/timeline.schema.json), [`schema/proposal.schema.json`](schema/proposal.schema.json), and [`data/timelines/openai-reference.json`](data/timelines/openai-reference.json).
 
 The repository also includes
 [`data/timelines/web-standards-proof.json`](data/timelines/web-standards-proof.json),

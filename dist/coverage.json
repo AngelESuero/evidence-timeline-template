@@ -9,8 +9,8 @@
   },
   "timelines": [
     {
-      "id": "openai-seed",
-      "title": "OpenAI: Public Milestones Seed Timeline",
+      "id": "openai-reference",
+      "title": "OpenAI: Reviewed Public Reference Timeline",
       "event_count": 29,
       "source_count": 33,
       "first_event": "2015-12-11",
