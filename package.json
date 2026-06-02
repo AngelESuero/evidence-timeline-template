@@ -7,9 +7,10 @@
     "build": "node scripts/build.mjs",
     "export:sources": "node scripts/export-sources.mjs",
     "export:presentation": "node scripts/export-presentation.mjs",
+    "check:public": "node scripts/check-public-leaks.mjs",
     "extract:x": "node scripts/extract-x-archive.mjs",
     "interpret:x": "node scripts/interpret-x-archive.mjs",
     "propose": "node scripts/propose.mjs",
-    "check": "npm run validate && npm run export:sources && npm run export:presentation && npm run build"
+    "check": "npm run validate && npm run check:public && npm run export:sources && npm run export:presentation && npm run build && npm run check:public"
   }
 }

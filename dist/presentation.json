@@ -888,6 +888,214 @@
           ]
         }
       ]
+    },
+    {
+      "id": "web-standards-proof",
+      "title": "Web Standards: Compact Proof Timeline",
+      "description": "A compact official-source timeline used to prove that the evidence engine works beyond company and product histories.",
+      "updated": "2026-06-01",
+      "year_groups": [
+        {
+          "year": "1989",
+          "events": [
+            {
+              "id": "www-proposal",
+              "date": "1989-03",
+              "date_precision": "month",
+              "title": "The World Wide Web is proposed",
+              "summary": "Tim Berners-Lee wrote Information Management: A Proposal at CERN, describing a distributed hypertext system for managing complex evolving information.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "research",
+              "timeline_lanes": [
+                "chronology",
+                "capability"
+              ],
+              "interpretation": "This is an example of a timeline beginning with a primary artifact rather than a product announcement.",
+              "capability_implication": "The proposal describes linked information as a way to navigate complex, evolving systems.",
+              "reliability_note": null,
+              "social_implication": null,
+              "related_events": [],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://www.w3.org/History/1989/proposal.html",
+                  "title": "Information Management: A Proposal",
+                  "publisher": "W3C",
+                  "type": "official_research",
+                  "published": "1989-03",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Original web proposal and distributed-hypertext framing",
+                  "archive_status": "archived",
+                  "author_or_speaker": "Tim Berners-Lee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "1994",
+          "events": [
+            {
+              "id": "w3c-founded",
+              "date": "1994-10",
+              "date_precision": "month",
+              "title": "The World Wide Web Consortium is founded",
+              "summary": "Tim Berners-Lee founded W3C in October 1994 to foster a consistent architecture for the rapidly growing web.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition"
+              ],
+              "interpretation": "The timeline shifts from an initial technical proposal to an institution for interoperable standards.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "Open standards require durable institutions and multi-stakeholder participation.",
+              "related_events": [
+                "www-proposal"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://www.w3.org/Consortium/facts.html",
+                  "title": "History",
+                  "publisher": "W3C",
+                  "type": "official_product_documentation",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "W3C institutional history",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2008",
+          "events": [
+            {
+              "id": "wcag-2-0-published",
+              "date": "2008-12-11",
+              "date_precision": "day",
+              "title": "WCAG 2.0 becomes a W3C Recommendation",
+              "summary": "W3C published Web Content Accessibility Guidelines 2.0 as a stable, referenceable Recommendation web standard.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "policy_response",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition"
+              ],
+              "interpretation": "This demonstrates how the same engine can track standards and public-interest guidance rather than software releases.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "Accessibility standards make the web's human consequences part of the historical record.",
+              "related_events": [
+                "w3c-founded"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+                  "title": "WCAG 2 Overview",
+                  "publisher": "W3C Web Accessibility Initiative",
+                  "type": "official_product_documentation",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "WCAG version publication dates and backwards-compatibility explanation",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "events": [
+            {
+              "id": "wcag-2-1-published",
+              "date": "2018-06-05",
+              "date_precision": "day",
+              "title": "WCAG 2.1 is published",
+              "summary": "W3C published WCAG 2.1, adding one guideline and 17 success criteria while preserving backwards compatibility with WCAG 2.0.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "policy_response",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition"
+              ],
+              "interpretation": "This shows an evolving standards branch with continuity across versions.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "The newer recommendation expands accessibility coverage without discarding the earlier baseline.",
+              "related_events": [
+                "wcag-2-0-published"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+                  "title": "WCAG 2 Overview",
+                  "publisher": "W3C Web Accessibility Initiative",
+                  "type": "official_product_documentation",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "WCAG 2.1 publication date and added criteria",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "events": [
+            {
+              "id": "wcag-2-2-published",
+              "date": "2023-10-05",
+              "date_precision": "day",
+              "title": "WCAG 2.2 becomes a W3C Recommendation",
+              "summary": "W3C published WCAG 2.2 as a Recommendation, adding nine success criteria since WCAG 2.1.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "policy_response",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition"
+              ],
+              "interpretation": "A standards timeline can retain version relationships and compatibility context directly beside the dated event.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "The added criteria improve accessibility guidance for people with visual, physical, and cognitive disabilities.",
+              "related_events": [
+                "wcag-2-1-published"
+              ],
+              "open_questions": [],
+              "sources": [
+                {
+                  "url": "https://www.w3.org/news/2023/web-content-accessibility-guidelines-wcag-2-2-is-a-w3c-recommendation/",
+                  "title": "Web Content Accessibility Guidelines (WCAG) 2.2 is a W3C Recommendation",
+                  "publisher": "W3C",
+                  "type": "official_announcement",
+                  "published": "2023-10-05",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "WCAG 2.2 Recommendation publication and added success criteria",
+                  "archive_status": "live"
+                },
+                {
+                  "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+                  "title": "WCAG 2 Overview",
+                  "publisher": "W3C Web Accessibility Initiative",
+                  "type": "official_product_documentation",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "WCAG version relationships and backwards compatibility",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

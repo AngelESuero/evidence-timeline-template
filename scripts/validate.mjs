@@ -75,6 +75,11 @@ function validateTimeline(timeline, filename) {
       sourceUrls.set(source.url, source);
     }
   }
+  for (const [index, event] of timeline.events.entries()) {
+    for (const relatedId of event.related_events ?? []) {
+      if (!ids.has(relatedId)) errors.push(`${filename}: events[${index}].related_events references missing event ${relatedId}`);
+    }
+  }
   return errors;
 }
 

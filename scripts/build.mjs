@@ -35,7 +35,7 @@ const timelineMarkup = timelines.map((timeline) => `
     </nav>
     <nav class="year-nav" aria-label="Timeline years">
       <span>Jump to year</span>
-      ${[...new Set(timeline.events.map((event) => event.date.slice(0, 4)))].map((year) => `<a href="#year-${escapeHtml(year)}">${escapeHtml(year)}</a>`).join("")}
+      ${[...new Set(timeline.events.map((event) => event.date.slice(0, 4)))].map((year) => `<a href="#${escapeHtml(timeline.id)}-year-${escapeHtml(year)}">${escapeHtml(year)}</a>`).join("")}
     </nav>
     <div class="search-tools">
       <label>
@@ -52,7 +52,7 @@ const timelineMarkup = timelines.map((timeline) => `
     </div>
     <ol class="records">
       ${[...timeline.events].sort((a, b) => a.date.localeCompare(b.date)).map((event, index, events) => `
-      ${index === 0 || events[index - 1].date.slice(0, 4) !== event.date.slice(0, 4) ? `<li class="year-marker" id="year-${escapeHtml(event.date.slice(0, 4))}"><span>${escapeHtml(event.date.slice(0, 4))}</span></li>` : ""}
+      ${index === 0 || events[index - 1].date.slice(0, 4) !== event.date.slice(0, 4) ? `<li class="year-marker" id="${escapeHtml(timeline.id)}-year-${escapeHtml(event.date.slice(0, 4))}"><span>${escapeHtml(event.date.slice(0, 4))}</span></li>` : ""}
       <li class="record-shell" data-lanes="${escapeHtml(lanes(event).join(" "))}" data-source-types="${escapeHtml(event.sources.map((source) => source.type).join(" "))}" data-search="${escapeHtml([event.title, event.summary, event.interpretation, event.capability_implication, event.reliability_note, event.social_implication].filter(Boolean).join(" ").toLowerCase())}">
         <article class="record" id="${escapeHtml(event.id)}">
           <header class="record-meta">

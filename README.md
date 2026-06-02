@@ -30,6 +30,9 @@ The repository can be paired with GitHub Actions and GitHub Pages after the
 publishing token is authorized for workflow changes. Until then, run
 `npm run check` locally before publishing.
 
+`npm run check` validates records and cross-links, scans public files for
+private-archive leak markers, exports registries, and rebuilds the static site.
+
 ## Structure
 
 ```text
@@ -54,6 +57,11 @@ Each event records:
 - optional `disputes`, `open_questions`, and `related_events`
 
 See [`schema/timeline.schema.json`](schema/timeline.schema.json), [`schema/proposal.schema.json`](schema/proposal.schema.json), and [`data/timelines/openai-seed.json`](data/timelines/openai-seed.json).
+
+The repository also includes
+[`data/timelines/web-standards-proof.json`](data/timelines/web-standards-proof.json),
+a compact W3C-sourced timeline that exercises the engine outside the OpenAI
+reference implementation.
 
 ## Evidence Labels
 

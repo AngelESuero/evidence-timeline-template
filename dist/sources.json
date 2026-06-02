@@ -401,6 +401,77 @@
           "event_id": "sora-product-rollout"
         }
       ]
+    },
+    {
+      "url": "https://www.w3.org/Consortium/facts.html",
+      "title": "History",
+      "publisher": "W3C",
+      "type": "official_product_documentation",
+      "accessed": "2026-06-01",
+      "claim_scope": "W3C institutional history",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "w3c-founded"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/History/1989/proposal.html",
+      "title": "Information Management: A Proposal",
+      "publisher": "W3C",
+      "type": "official_research",
+      "published": "1989-03",
+      "accessed": "2026-06-01",
+      "claim_scope": "Original web proposal and distributed-hypertext framing",
+      "archive_status": "archived",
+      "author_or_speaker": "Tim Berners-Lee",
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "www-proposal"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/news/2023/web-content-accessibility-guidelines-wcag-2-2-is-a-w3c-recommendation/",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2 is a W3C Recommendation",
+      "publisher": "W3C",
+      "type": "official_announcement",
+      "published": "2023-10-05",
+      "accessed": "2026-06-01",
+      "claim_scope": "WCAG 2.2 Recommendation publication and added success criteria",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-2-published"
+        }
+      ]
+    },
+    {
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "title": "WCAG 2 Overview",
+      "publisher": "W3C Web Accessibility Initiative",
+      "type": "official_product_documentation",
+      "accessed": "2026-06-01",
+      "claim_scope": "WCAG version publication dates and backwards-compatibility explanation",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-0-published"
+        },
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-1-published"
+        },
+        {
+          "timeline_id": "web-standards-proof",
+          "event_id": "wcag-2-2-published"
+        }
+      ]
     }
   ]
 }
