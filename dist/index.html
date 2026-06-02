@@ -5,158 +5,351 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evidence Timelines</title>
   <style>
-    :root { color-scheme: light; font-family: Inter, system-ui, sans-serif; color: #1d2935; background: #f6f3ed; }
-    body { margin: 0; }
-    main { max-width: 900px; margin: auto; padding: 48px 20px 80px; }
-    h1 { font-size: clamp(2rem, 6vw, 4.5rem); line-height: .98; max-width: 720px; }
-    h2 { font-size: 2rem; margin: 0; }
-    h3 { margin-bottom: 8px; }
-    h4 { margin-bottom: 4px; }
-    a { color: #095b58; }
-    .lede { max-width: 720px; font-size: 1.1rem; }
-    .timeline { margin-top: 64px; }
-    .timeline > ol { list-style: none; padding: 0; border-left: 2px solid #bdc9c3; }
-    .timeline > ol > li { margin: 0 0 28px 20px; position: relative; }
-    .timeline > ol > li::before { content: ""; width: 12px; height: 12px; background: #095b58; border-radius: 50%; position: absolute; left: -27px; top: 8px; }
-    article { padding: 20px; background: white; border: 1px solid #e0ddd4; border-radius: 12px; box-shadow: 0 6px 16px #1d29350d; }
-    .eyebrow, .date, small { color: #60706e; }
-    .labels span { display: inline-block; padding: 3px 8px; margin: 6px 6px 0 0; background: #e4eeeb; border-radius: 99px; font-size: .78rem; }
-    .interpretation { border-left: 3px solid #c69e42; padding-left: 12px; }
+    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; color: #f4f4f0; background: #090909; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #090909; }
+    a { color: #f4f4f0; text-underline-offset: 4px; text-decoration-color: #666; }
+    a:hover { text-decoration-color: #f4f4f0; }
+    main { max-width: 1180px; margin: auto; padding: 92px 28px 120px; }
+    .masthead { max-width: 760px; margin: 0 auto; padding: 24px 0 88px; text-align: center; }
+    h1 { margin: 0; font-size: clamp(3rem, 6vw, 5.7rem); font-weight: 400; letter-spacing: -.07em; line-height: .94; }
+    .lede { margin: 30px auto 0; max-width: 620px; color: #c3c3bd; font-size: 1.05rem; line-height: 1.55; }
+    .eyebrow { color: #989890; font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; }
+    .timeline-intro { max-width: 680px; margin: 0 auto 56px; }
+    .timeline-intro h2 { margin: 12px 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 400; line-height: 1.02; }
+    .timeline-intro p:last-child { color: #b8b8b1; font-size: 1rem; line-height: 1.6; }
+    .timeline-controls { display: flex; justify-content: space-between; margin: 0 0 18px; color: #a1a19a; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; }
+    .timeline-controls p { margin: 0; }
+    .records { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
+    .record { min-height: 208px; padding: 24px 26px 22px; border: 1px solid #2b2b29; background: #0d0d0d; transition: border-color .2s ease, background .2s ease; }
+    .record:hover, .record:target { border-color: #5b5b56; background: #111; }
+    .record-meta, .record-meta > div, .record-footer, .labels { display: flex; align-items: center; }
+    .record-meta { justify-content: space-between; color: #aaa9a2; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+    .record-meta > div { gap: 12px; }
+    .record-meta span { color: #e8e8e3; }
+    .permalink { color: #aaa9a2; font-size: 1rem; text-decoration: none; }
+    h3 { max-width: 900px; margin: 28px 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.65rem, 3vw, 2.6rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
+    .summary { max-width: 860px; margin: 0; color: #b8b8b1; font-size: .98rem; line-height: 1.6; }
+    .record-footer { justify-content: space-between; gap: 18px; margin-top: 26px; }
+    details { max-width: 820px; }
+    summary { color: #dadad4; cursor: pointer; font-size: .8rem; letter-spacing: .1em; list-style: none; text-transform: uppercase; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: ' +'; color: #8f8f89; }
+    details[open] summary::after { content: ' -'; }
+    .interpretation, .source-list, .disputes { margin: 20px 0 0; color: #b8b8b1; font-size: .9rem; line-height: 1.6; }
+    .interpretation strong, .source-list strong, .disputes strong { display: block; margin-bottom: 4px; color: #f4f4f0; font-size: .72rem; letter-spacing: .11em; text-transform: uppercase; }
+    .source-list ul, .disputes ul { margin: 8px 0 0; padding-left: 18px; }
+    .source-list li + li { margin-top: 10px; }
+    small { display: block; margin-top: 3px; color: #8d8d87; }
+    .labels { flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+    .labels span { padding: 4px 8px; border: 1px solid #343431; color: #a5a59e; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+    @media (max-width: 680px) {
+      main { padding: 54px 16px 80px; }
+      .masthead { padding-bottom: 62px; text-align: left; }
+      h1 { font-size: clamp(3.2rem, 18vw, 5.2rem); }
+      .timeline-intro { margin-bottom: 36px; }
+      .timeline-controls { gap: 12px; font-size: .62rem; }
+      .record { min-height: 0; padding: 18px 16px; }
+      h3 { margin-top: 22px; font-size: 1.75rem; }
+      .record-footer { display: block; }
+      .labels { justify-content: flex-start; margin-top: 20px; }
+    }
   </style>
 </head>
 <body>
   <main>
-    <p class="eyebrow">Open-source starter</p>
-    <h1>Evidence timelines for stories worth inspecting.</h1>
-    <p class="lede">A timeline is not an authority. It is an inspectable map of the evidence available at a particular moment.</p>
+    <header class="masthead">
+      <p class="eyebrow">Open-source starter</p>
+      <h1>Evidence timelines for stories worth inspecting.</h1>
+      <p class="lede">A timeline is not an authority. It is an inspectable map of the evidence available at a particular moment.</p>
+    </header>
     
-  <section class="timeline">
-    <header>
+  <section class="timeline" aria-labelledby="openai-seed-title">
+    <header class="timeline-intro">
       <p class="eyebrow">Updated 2026-06-01</p>
-      <h2>OpenAI: Public Milestones Seed Timeline</h2>
+      <h2 id="openai-seed-title">OpenAI: Public Milestones Seed Timeline</h2>
       <p>A small official-source seed timeline. It is a starting point for reviewed expansion, not a comprehensive history.</p>
     </header>
-    <ol>
+    <div class="timeline-controls">
+      <p>11 reviewed records</p>
+      <p>Oldest to newest</p>
+    </div>
+    <ol class="records">
       
-      <li>
-        <article>
-          <div class="date">2015-12-11</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="openai-introduced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2015-12-11">2015-12-11</time>
+            </div>
+            <a class="permalink" href="#openai-introduced" aria-label="Link to OpenAI is introduced">#</a>
+          </header>
           <h3>OpenAI is introduced</h3>
-          <p>OpenAI published its introductory announcement and described itself as a nonprofit artificial intelligence research company.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This is an appropriate public starting point for a timeline about OpenAI&#39;s institutional history.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/introducing-openai/">Introducing OpenAI</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI published its introductory announcement and described itself as a nonprofit artificial intelligence research company.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This is an appropriate public starting point for a timeline about OpenAI&#39;s institutional history.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-openai/">Introducing OpenAI</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2020-06-11</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="openai-api-private-beta">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2020-06-11">2020-06-11</time>
+            </div>
+            <a class="permalink" href="#openai-api-private-beta" aria-label="Link to OpenAI API launches in private beta">#</a>
+          </header>
           <h3>OpenAI API launches in private beta</h3>
-          <p>OpenAI announced a private beta API for accessing new AI models through a general-purpose text-in, text-out interface.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This milestone marks an early public path from model research toward developer-facing infrastructure.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/blog/openai-api/">OpenAI API</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI announced a private beta API for accessing new AI models through a general-purpose text-in, text-out interface.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This milestone marks an early public path from model research toward developer-facing infrastructure.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/blog/openai-api/">OpenAI API</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2021-01-05</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="dall-e-announced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2021-01-05">2021-01-05</time>
+            </div>
+            <a class="permalink" href="#dall-e-announced" aria-label="Link to DALL-E is announced">#</a>
+          </header>
           <h3>DALL-E is announced</h3>
-          <p>OpenAI announced DALL-E, a neural network trained to create images from text captions.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> The announcement broadens the public timeline beyond language output into text-guided image generation.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/dall-e">DALL-E: Creating images from text</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI announced DALL-E, a neural network trained to create images from text captions.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>The announcement broadens the public timeline beyond language output into text-guided image generation.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/dall-e">DALL-E: Creating images from text</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2022-11-30</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="chatgpt-public-launch">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2022-11-30">2022-11-30</time>
+            </div>
+            <a class="permalink" href="#chatgpt-public-launch" aria-label="Link to ChatGPT launches publicly">#</a>
+          </header>
           <h3>ChatGPT launches publicly</h3>
-          <p>OpenAI opened ChatGPT to public feedback as a research preview.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> The public launch of ChatGPT is a major product milestone and a useful anchor for later product changes.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/chatgpt/">Introducing ChatGPT</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI opened ChatGPT to public feedback as a research preview.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>The public launch of ChatGPT is a major product milestone and a useful anchor for later product changes.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/chatgpt/">Introducing ChatGPT</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2023-03-14</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="gpt-4-announced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2023-03-14">2023-03-14</time>
+            </div>
+            <a class="permalink" href="#gpt-4-announced" aria-label="Link to GPT-4 is announced">#</a>
+          </header>
           <h3>GPT-4 is announced</h3>
-          <p>OpenAI announced GPT-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This milestone documents a major model-generation change after ChatGPT&#39;s public launch.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/gpt-4-research/">GPT-4</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI announced GPT-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This milestone documents a major model-generation change after ChatGPT&#39;s public launch.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/gpt-4-research/">GPT-4</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2023-03-23</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="chatgpt-plugins-alpha">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2023-03-23">2023-03-23</time>
+            </div>
+            <a class="permalink" href="#chatgpt-plugins-alpha" aria-label="Link to ChatGPT plugins enter alpha rollout">#</a>
+          </header>
           <h3>ChatGPT plugins enter alpha rollout</h3>
-          <p>OpenAI announced initial support for ChatGPT plugins and began extending alpha access to users and developers from a waitlist.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/blog/chatgpt-plugins">ChatGPT plugins</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI announced initial support for ChatGPT plugins and began extending alpha access to users and developers from a waitlist.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/blog/chatgpt-plugins">ChatGPT plugins</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2023-11-06</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="devday-gpt-4-turbo-assistants-api">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2023-11-06">2023-11-06</time>
+            </div>
+            <a class="permalink" href="#devday-gpt-4-turbo-assistants-api" aria-label="Link to DevDay introduces GPT-4 Turbo and Assistants API">#</a>
+          </header>
           <h3>DevDay introduces GPT-4 Turbo and Assistants API</h3>
-          <p>OpenAI announced GPT-4 Turbo, the Assistants API, and additional multimodal developer-platform capabilities at DevDay.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This event captures a substantial expansion of the developer platform after the initial API beta.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/new-models-and-developer-products-announced-at-devday/">New models and developer products announced at DevDay</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI announced GPT-4 Turbo, the Assistants API, and additional multimodal developer-platform capabilities at DevDay.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This event captures a substantial expansion of the developer platform after the initial API beta.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/new-models-and-developer-products-announced-at-devday/">New models and developer products announced at DevDay</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2024-01-10</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="gpt-store-rollout">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2024-01-10">2024-01-10</time>
+            </div>
+            <a class="permalink" href="#gpt-store-rollout" aria-label="Link to GPT Store rollout begins">#</a>
+          </header>
           <h3>GPT Store rollout begins</h3>
-          <p>OpenAI began rolling out the GPT Store to ChatGPT Plus, Team, and Enterprise users.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This milestone documents a product-distribution layer for custom versions of ChatGPT.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/introducing-the-gpt-store/">Introducing the GPT Store</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI began rolling out the GPT Store to ChatGPT Plus, Team, and Enterprise users.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This milestone documents a product-distribution layer for custom versions of ChatGPT.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-the-gpt-store/">Introducing the GPT Store</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2024-05-13</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="gpt-4o-announced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2024-05-13">2024-05-13</time>
+            </div>
+            <a class="permalink" href="#gpt-4o-announced" aria-label="Link to GPT-4o is introduced">#</a>
+          </header>
           <h3>GPT-4o is introduced</h3>
-          <p>OpenAI introduced GPT-4o as a new flagship model and described improvements across text, voice, and vision.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This is a later public product and model milestone that can be expanded with system-card evidence.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/">Introducing GPT-4o and more tools to ChatGPT free users</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI introduced GPT-4o as a new flagship model and described improvements across text, voice, and vision.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This is a later public product and model milestone that can be expanded with system-card evidence.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/">Introducing GPT-4o and more tools to ChatGPT free users</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2024-09-12</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="o1-preview-released">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2024-09-12">2024-09-12</time>
+            </div>
+            <a class="permalink" href="#o1-preview-released" aria-label="Link to OpenAI o1-preview is released">#</a>
+          </header>
           <h3>OpenAI o1-preview is released</h3>
-          <p>OpenAI released the first preview models in its o1 series in ChatGPT and the API, describing them as models designed to spend more time thinking before responding.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This introduces a public reasoning-model branch in the product timeline.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/introducing-openai-o1-preview/">Introducing OpenAI o1-preview</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI released the first preview models in its o1 series in ChatGPT and the API, describing them as models designed to spend more time thinking before responding.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This introduces a public reasoning-model branch in the product timeline.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-openai-o1-preview/">Introducing OpenAI o1-preview</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
-      <li>
-        <article>
-          <div class="date">2024-10-31</div>
-          <div class="labels"><span>verified</span><span>high confidence</span></div>
+      <li class="record-shell">
+        <article class="record" id="chatgpt-search-introduced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2024-10-31">2024-10-31</time>
+            </div>
+            <a class="permalink" href="#chatgpt-search-introduced" aria-label="Link to ChatGPT search is introduced">#</a>
+          </header>
           <h3>ChatGPT search is introduced</h3>
-          <p>OpenAI introduced ChatGPT search with web answers that include links to relevant sources, initially for ChatGPT Plus and Team users and SearchGPT waitlist users.</p>
-          <p class="interpretation"><strong>Interpretation:</strong> This event is directly relevant to a timeline project concerned with source trails and current web information.</p>
-          <h4>Sources</h4>
-          <ul><li><a href="https://openai.com/index/introducing-chatgpt-search/">Introducing ChatGPT search</a> <small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+          <p class="summary">OpenAI introduced ChatGPT search with web answers that include links to relevant sources, initially for ChatGPT Plus and Team users and SearchGPT waitlist users.</p>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <p class="interpretation"><strong>Interpretation</strong>This event is directly relevant to a timeline project concerned with source trails and current web information.</p>
+              
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-chatgpt-search/">Introducing ChatGPT search</a><small>OpenAI · primary · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
         </article>
       </li>
     </ol>
