@@ -36,7 +36,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2015-12-11",
+                  "claim_scope": "OpenAI institutional introduction and nonprofit research-company description"
                 }
               ]
             }
@@ -73,7 +75,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2020-06-11",
+                  "claim_scope": "OpenAI API private-beta launch and general-purpose interface description"
                 }
               ]
             }
@@ -111,7 +115,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2021-01-05",
+                  "claim_scope": "DALL-E announcement and text-guided image-generation description"
                 }
               ]
             }
@@ -147,7 +153,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2022-11-30",
+                  "claim_scope": "ChatGPT public research-preview launch"
                 }
               ]
             }
@@ -186,7 +194,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2023-03-14",
+                  "claim_scope": "GPT-4 announcement and multimodal-input description"
                 }
               ]
             },
@@ -221,7 +231,9 @@
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
                   "note": "The official page now notes that OpenAI plugins have been deprecated.",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2023-03-23",
+                  "claim_scope": "ChatGPT plugins alpha rollout and later deprecation note"
                 }
               ]
             },
@@ -255,7 +267,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2023-11-06",
+                  "claim_scope": "GPT-4 Turbo, Assistants API, and DevDay developer-platform announcements"
                 }
               ]
             }
@@ -294,7 +308,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2024-01-10",
+                  "claim_scope": "GPT Store rollout and eligible ChatGPT plans"
                 }
               ]
             },
@@ -329,7 +345,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2024-05-13",
+                  "claim_scope": "GPT-4o launch and text, voice, and vision improvements"
                 }
               ]
             },
@@ -362,7 +380,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2024-09-12",
+                  "claim_scope": "OpenAI o1-preview release and reasoning-model description"
                 }
               ]
             },
@@ -433,7 +453,9 @@
                   "publisher": "OpenAI",
                   "type": "official_announcement",
                   "accessed": "2026-06-01",
-                  "archive_status": "live"
+                  "archive_status": "live",
+                  "published": "2024-10-31",
+                  "claim_scope": "ChatGPT search launch and outbound source-link behavior"
                 }
               ]
             },
