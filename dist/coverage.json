@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-06-01T00:00:00.000Z",
+  "mode": "coverage_audit",
+  "note": "Coverage is a completeness signal, not proof that a timeline is exhaustive or that every interpretation is correct.",
+  "totals": {
+    "timelines": 2,
+    "events": 32,
+    "unique_sources": 35
+  },
+  "timelines": [
+    {
+      "id": "openai-seed",
+      "title": "OpenAI: Public Milestones Seed Timeline",
+      "event_count": 27,
+      "source_count": 31,
+      "first_event": "2015-12-11",
+      "last_event": "2025-09-15",
+      "lane_counts": {
+        "capability": 20,
+        "chronology": 27,
+        "disputes": 3,
+        "product": 21,
+        "social_transition": 6
+      },
+      "record_type_counts": {
+        "capability_signal": 8,
+        "product_change": 11,
+        "public_statement": 3,
+        "release": 3,
+        "research": 2
+      },
+      "source_type_counts": {
+        "official_announcement": 23,
+        "official_legal_or_policy_document": 2,
+        "official_research": 1,
+        "official_system_card": 5
+      },
+      "records_with_reliability_notes": 17,
+      "records_with_social_implications": 3,
+      "records_with_open_questions": 14,
+      "architecture_views": {
+        "chronology": true,
+        "capability": true,
+        "product": true,
+        "frontier_voices": false,
+        "social_transition": true,
+        "disputes": true
+      },
+      "missing_architecture_views": [
+        "frontier_voices"
+      ]
+    },
+    {
+      "id": "web-standards-proof",
+      "title": "Web Standards: Compact Proof Timeline",
+      "event_count": 5,
+      "source_count": 6,
+      "first_event": "1989-03",
+      "last_event": "2023-10-05",
+      "lane_counts": {
+        "capability": 1,
+        "chronology": 5,
+        "social_transition": 4
+      },
+      "record_type_counts": {
+        "policy_response": 3,
+        "public_statement": 1,
+        "research": 1
+      },
+      "source_type_counts": {
+        "official_announcement": 1,
+        "official_product_documentation": 4,
+        "official_research": 1
+      },
+      "records_with_reliability_notes": 0,
+      "records_with_social_implications": 4,
+      "records_with_open_questions": 0,
+      "architecture_views": null,
+      "missing_architecture_views": []
+    }
+  ],
+  "source_health": {
+    "live": 34,
+    "archived": 1,
+    "missing": 0,
+    "context_dependent": 0
+  },
+  "source_health_review_queue_count": 1
+}

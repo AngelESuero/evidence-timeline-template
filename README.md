@@ -32,7 +32,7 @@ publishing token is authorized for workflow changes. Until then, run
 
 `npm run check` validates records and cross-links, scans public files for
 private-archive leak markers, exports registries, audits stored source lifecycle
-metadata, and rebuilds the static site.
+metadata, reports architecture coverage, and rebuilds the static site.
 
 Run `npm run audit:urls` separately when network access is available. It writes
 `dist/source-url-audit.json`, a bounded live HTTP report. URL reachability is

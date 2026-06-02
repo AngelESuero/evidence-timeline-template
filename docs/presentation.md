@@ -8,6 +8,7 @@ The evidence engine and the visual timeline are separate layers.
 - `dist/sources.json` is a deduplicated public registry of cited source URLs.
 - `dist/source-health.json` is an offline metadata and lifecycle review report.
 - `dist/source-url-audit.json` is an optional live HTTP reachability snapshot.
+- `dist/coverage.json` is a generated completeness and architecture-view audit.
 - `private/` contains approved working archives and never enters the public export.
 
 Run:
