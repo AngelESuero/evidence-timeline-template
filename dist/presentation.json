@@ -127,6 +127,43 @@
           "year": "2022",
           "events": [
             {
+              "id": "instructgpt-method-published",
+              "date": "2022-01-27",
+              "date_precision": "day",
+              "title": "OpenAI publishes the InstructGPT alignment method",
+              "summary": "OpenAI published work on aligning language models to follow user intentions using reinforcement learning from human feedback.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "research",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "social_transition"
+              ],
+              "interpretation": "This records an alignment-method branch that later product milestones depend on but launch-only timelines often hide.",
+              "capability_implication": "The work focuses on making model behavior better match user intent rather than increasing scale alone.",
+              "reliability_note": "The publication discusses remaining limitations and should not be read as a claim that alignment is complete.",
+              "social_implication": null,
+              "related_events": [
+                "openai-api-private-beta"
+              ],
+              "open_questions": [
+                "How should timelines distinguish capability gains from improvements in instruction-following behavior?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/instruction-following/",
+                  "title": "Aligning language models to follow instructions",
+                  "publisher": "OpenAI",
+                  "type": "official_research",
+                  "published": "2022-01-27",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "InstructGPT publication and reinforcement-learning-from-human-feedback method",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
               "id": "chatgpt-public-launch",
               "date": "2022-11-30",
               "date_precision": "day",
@@ -315,6 +352,43 @@
               ]
             },
             {
+              "id": "model-spec-introduced",
+              "date": "2024-05-08",
+              "date_precision": "day",
+              "title": "OpenAI introduces the Model Spec",
+              "summary": "OpenAI introduced a draft Model Spec describing intended model behavior and the objectives, rules, and default behaviors used to shape it.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition",
+                "disputes"
+              ],
+              "interpretation": "Behavioral guidance belongs beside model releases because it changes how systems are intended to act in public use.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "Publishing behavioral guidance creates a more inspectable interface between model development and public expectations.",
+              "related_events": [
+                "instructgpt-method-published"
+              ],
+              "open_questions": [
+                "How should versioned behavior specifications be connected to deployment changes over time?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-the-model-spec/",
+                  "title": "Introducing the Model Spec",
+                  "publisher": "OpenAI",
+                  "type": "official_legal_or_policy_document",
+                  "published": "2024-05-08",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Draft Model Spec introduction and intended-behavior framework",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
               "id": "gpt-4o-announced",
               "date": "2024-05-13",
               "date_precision": "day",
@@ -348,6 +422,44 @@
                   "archive_status": "live",
                   "published": "2024-05-13",
                   "claim_scope": "GPT-4o launch and text, voice, and vision improvements"
+                }
+              ]
+            },
+            {
+              "id": "gpt-4o-system-card-published",
+              "date": "2024-08-08",
+              "date_precision": "day",
+              "title": "OpenAI publishes the GPT-4o System Card",
+              "summary": "OpenAI published a system card covering the safety work, evaluations, and risk mitigations performed before releasing GPT-4o.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "research",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "disputes"
+              ],
+              "interpretation": "A separate system-card record makes evaluation history visible instead of burying it under the product launch.",
+              "capability_implication": null,
+              "reliability_note": "System cards document evaluated risks and mitigations; they are not guarantees that every deployment risk is resolved.",
+              "social_implication": null,
+              "related_events": [
+                "gpt-4o-announced",
+                "model-spec-introduced"
+              ],
+              "open_questions": [
+                "Which later product changes require updated evaluation records?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/gpt-4o-system-card/",
+                  "title": "GPT-4o System Card",
+                  "publisher": "OpenAI",
+                  "type": "official_system_card",
+                  "published": "2024-08-08",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "GPT-4o safety work, evaluations, and mitigations",
+                  "archive_status": "live"
                 }
               ]
             },
@@ -582,6 +694,44 @@
                   "published": "2025-02-02",
                   "accessed": "2026-06-01",
                   "claim_scope": "Deep research launch and tool-use description",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "model-spec-updated",
+              "date": "2025-02-12",
+              "date_precision": "day",
+              "title": "OpenAI publishes an updated Model Spec",
+              "summary": "OpenAI published an updated Model Spec with changes to its chain of command, customizability, transparency, and intellectual-freedom guidance.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "social_transition",
+                "disputes"
+              ],
+              "interpretation": "This adds a versioned governance layer: intended behavior changes over time and should be inspectable like product releases.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "Changes to default behavior and transparency guidance affect how users encounter the system in ordinary use.",
+              "related_events": [
+                "model-spec-introduced",
+                "operator-research-preview"
+              ],
+              "open_questions": [
+                "How should a timeline map Model Spec changes to specific deployed model behaviors?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+                  "title": "Sharing the latest Model Spec",
+                  "publisher": "OpenAI",
+                  "type": "official_legal_or_policy_document",
+                  "published": "2025-02-12",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "Updated Model Spec publication and highlighted behavior-guidance changes",
                   "archive_status": "live"
                 }
               ]

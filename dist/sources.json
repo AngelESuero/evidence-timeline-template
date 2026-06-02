@@ -18,6 +18,22 @@
       ]
     },
     {
+      "url": "https://openai.com/index/instruction-following/",
+      "title": "Aligning language models to follow instructions",
+      "publisher": "OpenAI",
+      "type": "official_research",
+      "published": "2022-01-27",
+      "accessed": "2026-06-01",
+      "claim_scope": "InstructGPT publication and reinforcement-learning-from-human-feedback method",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "instructgpt-method-published"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/chatgpt-agent-system-card/",
       "title": "ChatGPT agent System Card",
       "publisher": "OpenAI",
@@ -79,6 +95,22 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "gpt-4-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-4o-system-card/",
+      "title": "GPT-4o System Card",
+      "publisher": "OpenAI",
+      "type": "official_system_card",
+      "published": "2024-08-08",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-4o safety work, evaluations, and mitigations",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-4o-system-card-published"
         }
       ]
     },
@@ -323,6 +355,22 @@
       ]
     },
     {
+      "url": "https://openai.com/index/introducing-the-model-spec/",
+      "title": "Introducing the Model Spec",
+      "publisher": "OpenAI",
+      "type": "official_legal_or_policy_document",
+      "published": "2024-05-08",
+      "accessed": "2026-06-01",
+      "claim_scope": "Draft Model Spec introduction and intended-behavior framework",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "model-spec-introduced"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/introducing-upgrades-to-codex/",
       "title": "Introducing upgrades to Codex",
       "publisher": "OpenAI",
@@ -415,6 +463,22 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "title": "Sharing the latest Model Spec",
+      "publisher": "OpenAI",
+      "type": "official_legal_or_policy_document",
+      "published": "2025-02-12",
+      "accessed": "2026-06-01",
+      "claim_scope": "Updated Model Spec publication and highlighted behavior-guidance changes",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "model-spec-updated"
         }
       ]
     },
