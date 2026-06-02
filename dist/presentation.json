@@ -591,6 +591,104 @@
                   "archive_status": "live"
                 }
               ]
+            },
+            {
+              "id": "chatgpt-agent-introduced",
+              "date": "2025-07-17",
+              "date_precision": "day",
+              "title": "ChatGPT agent is introduced",
+              "summary": "OpenAI introduced ChatGPT agent as a unified agentic system that can complete online tasks using its own virtual computer.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "product_change",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "This consolidates earlier browser-action and research branches into a broader product surface.",
+              "capability_implication": "The system combines website interaction, research, and multi-step task completion through a virtual computer.",
+              "reliability_note": "The system card documents safeguards and residual risks. A fuller record should continue tracking deployment changes over time.",
+              "social_implication": null,
+              "related_events": [
+                "operator-research-preview",
+                "deep-research-introduced",
+                "o3-o4-mini-release"
+              ],
+              "open_questions": [
+                "Which actions should remain confirmation-gated as agentic systems become more capable?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-chatgpt-agent/",
+                  "title": "Introducing ChatGPT agent: bridging research and action",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-07-17",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "ChatGPT agent launch and unified agentic-system description",
+                  "archive_status": "live"
+                },
+                {
+                  "url": "https://openai.com/index/chatgpt-agent-system-card/",
+                  "title": "ChatGPT agent System Card",
+                  "publisher": "OpenAI",
+                  "type": "official_system_card",
+                  "published": "2025-07-17",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "ChatGPT agent safety evaluation and safeguards",
+                  "archive_status": "live"
+                }
+              ]
+            },
+            {
+              "id": "gpt-5-introduced",
+              "date": "2025-08-07",
+              "date_precision": "day",
+              "title": "GPT-5 is introduced",
+              "summary": "OpenAI introduced GPT-5 as a unified system with a smart, efficient model, a deeper reasoning model, and a router that selects between them.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "capability_signal",
+              "timeline_lanes": [
+                "chronology",
+                "capability",
+                "product"
+              ],
+              "interpretation": "The product presentation moves toward a routed system rather than requiring users to choose every model branch manually.",
+              "capability_implication": "OpenAI describes GPT-5 as combining efficient responses, deeper reasoning, and automatic routing.",
+              "reliability_note": "The system card should remain the primary companion source for capability and safety claims.",
+              "social_implication": null,
+              "related_events": [
+                "gpt-4-5-research-preview",
+                "gpt-4-1-api-launch",
+                "o3-o4-mini-release"
+              ],
+              "open_questions": [
+                "How should a public timeline represent routed systems when model behavior changes by task and deployment state?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/introducing-gpt-5/",
+                  "title": "Introducing GPT-5",
+                  "publisher": "OpenAI",
+                  "type": "official_announcement",
+                  "published": "2025-08-07",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "GPT-5 launch and unified-system description",
+                  "archive_status": "live"
+                },
+                {
+                  "url": "https://openai.com/index/gpt-5-system-card/",
+                  "title": "GPT-5 System Card",
+                  "publisher": "OpenAI",
+                  "type": "official_system_card",
+                  "published": "2025-08-07",
+                  "accessed": "2026-06-01",
+                  "claim_scope": "GPT-5 evaluation and safety documentation",
+                  "archive_status": "live"
+                }
+              ]
             }
           ]
         }

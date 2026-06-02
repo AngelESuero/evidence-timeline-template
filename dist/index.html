@@ -24,6 +24,10 @@
     .lane-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 28px; }
     .lane-filter { padding: 7px 10px; border: 1px solid #343431; color: #aaa9a2; background: transparent; cursor: pointer; font: inherit; font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; transition: .2s ease; }
     .lane-filter:hover, .lane-filter.active { border-color: #d4d4ce; color: #f4f4f0; background: #171716; }
+    .search-tools { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 260px); gap: 12px; margin: 0 0 28px; }
+    .search-tools label { display: grid; gap: 7px; color: #989890; font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; }
+    .search-tools input, .search-tools select { min-height: 38px; padding: 8px 10px; border: 1px solid #343431; border-radius: 0; color: #e8e8e3; background: #0d0d0d; font: inherit; font-size: .82rem; letter-spacing: 0; outline: none; text-transform: none; }
+    .search-tools input:focus, .search-tools select:focus { border-color: #d4d4ce; }
     .records { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
     .record-shell[hidden] { display: none; }
     .record { min-height: 208px; padding: 24px 26px 22px; border: 1px solid #2b2b29; background: #0d0d0d; transition: border-color .2s ease, background .2s ease; }
@@ -66,6 +70,7 @@
       .record-footer { display: block; }
       .labels { justify-content: flex-start; margin-top: 20px; }
       .detail-grid { grid-template-columns: 1fr; gap: 16px; }
+      .search-tools { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -84,15 +89,28 @@
       <p>A small official-source seed timeline. It is a starting point for reviewed expansion, not a comprehensive history.</p>
     </header>
     <div class="timeline-controls">
-      <p><span data-visible-count>16</span> of 16 reviewed records</p>
+      <p><span data-visible-count>18</span> of 18 reviewed records</p>
       <p>Oldest to newest · inspectable sources</p>
     </div>
     <nav class="lane-filters" aria-label="Timeline views">
       <button class="lane-filter active" type="button" data-lane="all">all</button><button class="lane-filter" type="button" data-lane="chronology">chronology</button><button class="lane-filter" type="button" data-lane="capability">capability</button><button class="lane-filter" type="button" data-lane="product">product</button><button class="lane-filter" type="button" data-lane="frontier_voices">frontier voices</button><button class="lane-filter" type="button" data-lane="social_transition">social transition</button><button class="lane-filter" type="button" data-lane="disputes">disputes</button>
     </nav>
+    <div class="search-tools">
+      <label>
+        <span>Search records</span>
+        <input type="search" placeholder="Search titles, summaries, and notes" data-record-search>
+      </label>
+      <label>
+        <span>Source type</span>
+        <select data-source-filter>
+          <option value="all">all sources</option>
+          <option value="official_announcement">official announcement</option><option value="official_system_card">official system card</option>
+        </select>
+      </label>
+    </div>
     <ol class="records">
 
-      <li class="record-shell" data-lanes="chronology social_transition">
+      <li class="record-shell" data-lanes="chronology social_transition" data-source-types="official_announcement" data-search="openai is introduced openai published its introductory announcement and described itself as a nonprofit artificial intelligence research company. this is an appropriate public starting point for a timeline about openai&#39;s institutional history.">
         <article class="record" id="openai-introduced">
           <header class="record-meta">
             <div>
@@ -126,7 +144,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product">
+      <li class="record-shell" data-lanes="chronology product" data-source-types="official_announcement" data-search="openai api launches in private beta openai announced a private beta api for accessing new ai models through a general-purpose text-in, text-out interface. this milestone marks an early public path from model research toward developer-facing infrastructure.">
         <article class="record" id="openai-api-private-beta">
           <header class="record-meta">
             <div>
@@ -160,7 +178,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="dall-e is announced openai announced dall-e, a neural network trained to create images from text captions. the announcement broadens the public timeline beyond language output into text-guided image generation. the public product surface expands from text generation into text-guided image creation.">
         <article class="record" id="dall-e-announced">
           <header class="record-meta">
             <div>
@@ -194,7 +212,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product social_transition">
+      <li class="record-shell" data-lanes="chronology product social_transition" data-source-types="official_announcement" data-search="chatgpt launches publicly openai opened chatgpt to public feedback as a research preview. the public launch of chatgpt is a major product milestone and a useful anchor for later product changes. a public research preview made conversational ai directly accessible to a broad audience and created a new feedback surface.">
         <article class="record" id="chatgpt-public-launch">
           <header class="record-meta">
             <div>
@@ -228,7 +246,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability">
+      <li class="record-shell" data-lanes="chronology capability" data-source-types="official_announcement" data-search="gpt-4 is announced openai announced gpt-4 and described it as a large multimodal model accepting image and text inputs and emitting text outputs. this milestone documents a major model-generation change after chatgpt&#39;s public launch. the announcement documents a shift from text-only interaction toward multimodal input. the announcement describes capabilities, but a complete record should pair it with system-card evidence and known limitations.">
         <article class="record" id="gpt-4-announced">
           <header class="record-meta">
             <div>
@@ -262,7 +280,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product capability">
+      <li class="record-shell" data-lanes="chronology product capability" data-source-types="official_announcement" data-search="chatgpt plugins enter alpha rollout openai announced initial support for chatgpt plugins and began extending alpha access to users and developers from a waitlist. this milestone is useful for tracing how tool access and third-party integrations developed over time, including later deprecation. plugins extend the product from conversation toward tool use and third-party actions. the official page now notes that openai plugins have been deprecated. the timeline should retain both introduction and later lifecycle context.">
         <article class="record" id="chatgpt-plugins-alpha">
           <header class="record-meta">
             <div>
@@ -296,7 +314,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product capability">
+      <li class="record-shell" data-lanes="chronology product capability" data-source-types="official_announcement" data-search="devday introduces gpt-4 turbo and assistants api openai announced gpt-4 turbo, the assistants api, and additional multimodal developer-platform capabilities at devday. this event captures a substantial expansion of the developer platform after the initial api beta. the developer platform adds more persistent, tool-oriented building blocks for assistant experiences.">
         <article class="record" id="devday-gpt-4-turbo-assistants-api">
           <header class="record-meta">
             <div>
@@ -330,7 +348,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product social_transition">
+      <li class="record-shell" data-lanes="chronology product social_transition" data-source-types="official_announcement" data-search="gpt store rollout begins openai began rolling out the gpt store to chatgpt plus, team, and enterprise users. this milestone documents a product-distribution layer for custom versions of chatgpt.">
         <article class="record" id="gpt-store-rollout">
           <header class="record-meta">
             <div>
@@ -364,7 +382,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="gpt-4o is introduced openai introduced gpt-4o as a new flagship model and described improvements across text, voice, and vision. this is a later public product and model milestone that can be expanded with system-card evidence. the product direction moves toward more fluid interaction across text, voice, and vision. the announcement is an official capability claim. a fuller record should add system-card evidence and reviewed demonstrations.">
         <article class="record" id="gpt-4o-announced">
           <header class="record-meta">
             <div>
@@ -398,7 +416,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="openai o1-preview is released openai released the first preview models in its o1 series in chatgpt and the api, describing them as models designed to spend more time thinking before responding. this introduces a public reasoning-model branch in the product timeline. the public model line adds a reasoning-oriented branch designed to spend more time on a response. the preview label matters: this record marks a public release, not a conclusion about general reliability.">
         <article class="record" id="o1-preview-released">
           <header class="record-meta">
             <div>
@@ -432,7 +450,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology product capability">
+      <li class="record-shell" data-lanes="chronology product capability" data-source-types="official_announcement" data-search="chatgpt search is introduced openai introduced chatgpt search with web answers that include links to relevant sources, initially for chatgpt plus and team users and searchgpt waitlist users. this event is directly relevant to a timeline project concerned with source trails and current web information. the product adds a web-information layer with inspectable outbound source links. linked sources improve inspectability, but the presence of citations does not by itself verify every generated claim.">
         <article class="record" id="chatgpt-search-introduced">
           <header class="record-meta">
             <div>
@@ -466,7 +484,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement official_system_card" data-search="operator launches as a research preview openai introduced operator as a research preview of an agent that can use its own browser to perform tasks by typing, clicking, and scrolling. this is a useful marker in the shift from conversational assistance toward agents acting through interfaces people already use. operator adds visual browser interaction through cursor and keyboard actions. openai labels operator a research preview and documents mistakes, prompt injections, and harmful-task risks in the accompanying system card.">
         <article class="record" id="operator-research-preview">
           <header class="record-meta">
             <div>
@@ -500,7 +518,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="deep research is introduced openai introduced deep research in chatgpt as an agentic capability for multi-step research tasks that uses web browsing and python tools. this extends source-oriented search into longer-running research workflows. the product can carry out multi-step web research with tool use rather than only returning a single search response. research output still requires source inspection and claim-level review.">
         <article class="record" id="deep-research-introduced">
           <header class="record-meta">
             <div>
@@ -534,7 +552,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="gpt-4.5 enters research preview openai released gpt-4.5 as a research preview and described it as its largest and best model for chat at the time. the release documents a parallel capability path based on scaling pre-training rather than the reasoning-model branch alone. openai presents unsupervised learning and reasoning as complementary axes of model capability. openai described the release as a research preview and noted that gpt-4.5 did not support voice mode, video, or screensharing in chatgpt at launch.">
         <article class="record" id="gpt-4-5-research-preview">
           <header class="record-meta">
             <div>
@@ -568,7 +586,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="gpt-4.1 launches in the api openai launched gpt-4.1, gpt-4.1 mini, and gpt-4.1 nano in the api, highlighting improvements in coding, instruction following, and long-context comprehension. this is a developer-platform milestone that adds a long-context model family and a smaller nano tier. the announcement emphasizes coding, instruction following, and context windows up to one million tokens.">
         <article class="record" id="gpt-4-1-api-launch">
           <header class="record-meta">
             <div>
@@ -602,7 +620,7 @@
           </div>
         </article>
       </li>
-      <li class="record-shell" data-lanes="chronology capability product">
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement" data-search="openai releases o3 and o4-mini openai released o3 and o4-mini as reasoning models with access to tools in chatgpt and function calling in the api. this is a stronger bridge between reasoning models and agentic tool use. the models can reason about when and how to use tools including web search, files, python, visual inputs, and image generation. openai reports improved performance and accompanying safety evaluation; benchmark gains do not establish reliability across every workflow.">
         <article class="record" id="o3-o4-mini-release">
           <header class="record-meta">
             <div>
@@ -636,6 +654,74 @@
           </div>
         </article>
       </li>
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement official_system_card" data-search="chatgpt agent is introduced openai introduced chatgpt agent as a unified agentic system that can complete online tasks using its own virtual computer. this consolidates earlier browser-action and research branches into a broader product surface. the system combines website interaction, research, and multi-step task completion through a virtual computer. the system card documents safeguards and residual risks. a fuller record should continue tracking deployment changes over time.">
+        <article class="record" id="chatgpt-agent-introduced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2025-07-17">2025-07-17</time>
+              <em>product change</em>
+            </div>
+            <a class="permalink" href="#chatgpt-agent-introduced" aria-label="Link to ChatGPT agent is introduced">#</a>
+          </header>
+          <h3>ChatGPT agent is introduced</h3>
+          <p class="summary">OpenAI introduced ChatGPT agent as a unified agentic system that can complete online tasks using its own virtual computer.</p>
+          <div class="lane-list"><span>chronology</span><span>capability</span><span>product</span></div>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <div class="detail-grid">
+                <div class="detail-block"><strong>Interpretation</strong><p>This consolidates earlier browser-action and research branches into a broader product surface.</p></div>
+                <div class="detail-block"><strong>Capability implication</strong><p>The system combines website interaction, research, and multi-step task completion through a virtual computer.</p></div>
+                <div class="detail-block"><strong>Reliability note</strong><p>The system card documents safeguards and residual risks. A fuller record should continue tracking deployment changes over time.</p></div>
+
+
+                <div class="detail-block"><strong>Open questions</strong><ul><li>Which actions should remain confirmation-gated as agentic systems become more capable?</li></ul></div>
+              </div>
+              <div class="related-events"><strong>Related records</strong><a href="#operator-research-preview">operator-research-preview</a><a href="#deep-research-introduced">deep-research-introduced</a><a href="#o3-o4-mini-release">o3-o4-mini-release</a></div>
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-chatgpt-agent/">Introducing ChatGPT agent: bridging research and action</a><small>OpenAI · official announcement · accessed 2026-06-01</small></li><li><a href="https://openai.com/index/chatgpt-agent-system-card/">ChatGPT agent System Card</a><small>OpenAI · official system card · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
+        </article>
+      </li>
+      <li class="record-shell" data-lanes="chronology capability product" data-source-types="official_announcement official_system_card" data-search="gpt-5 is introduced openai introduced gpt-5 as a unified system with a smart, efficient model, a deeper reasoning model, and a router that selects between them. the product presentation moves toward a routed system rather than requiring users to choose every model branch manually. openai describes gpt-5 as combining efficient responses, deeper reasoning, and automatic routing. the system card should remain the primary companion source for capability and safety claims.">
+        <article class="record" id="gpt-5-introduced">
+          <header class="record-meta">
+            <div>
+              <span>verified</span>
+              <time datetime="2025-08-07">2025-08-07</time>
+              <em>capability signal</em>
+            </div>
+            <a class="permalink" href="#gpt-5-introduced" aria-label="Link to GPT-5 is introduced">#</a>
+          </header>
+          <h3>GPT-5 is introduced</h3>
+          <p class="summary">OpenAI introduced GPT-5 as a unified system with a smart, efficient model, a deeper reasoning model, and a router that selects between them.</p>
+          <div class="lane-list"><span>chronology</span><span>capability</span><span>product</span></div>
+          <div class="record-footer">
+            <details>
+              <summary>Inspect record</summary>
+              <div class="detail-grid">
+                <div class="detail-block"><strong>Interpretation</strong><p>The product presentation moves toward a routed system rather than requiring users to choose every model branch manually.</p></div>
+                <div class="detail-block"><strong>Capability implication</strong><p>OpenAI describes GPT-5 as combining efficient responses, deeper reasoning, and automatic routing.</p></div>
+                <div class="detail-block"><strong>Reliability note</strong><p>The system card should remain the primary companion source for capability and safety claims.</p></div>
+
+
+                <div class="detail-block"><strong>Open questions</strong><ul><li>How should a public timeline represent routed systems when model behavior changes by task and deployment state?</li></ul></div>
+              </div>
+              <div class="related-events"><strong>Related records</strong><a href="#gpt-4-5-research-preview">gpt-4-5-research-preview</a><a href="#gpt-4-1-api-launch">gpt-4-1-api-launch</a><a href="#o3-o4-mini-release">o3-o4-mini-release</a></div>
+              <div class="source-list">
+                <strong>Sources</strong>
+                <ul><li><a href="https://openai.com/index/introducing-gpt-5/">Introducing GPT-5</a><small>OpenAI · official announcement · accessed 2026-06-01</small></li><li><a href="https://openai.com/index/gpt-5-system-card/">GPT-5 System Card</a><small>OpenAI · official system card · accessed 2026-06-01</small></li></ul>
+              </div>
+            </details>
+            <div class="labels"><span>high confidence</span><span>day precision</span></div>
+          </div>
+        </article>
+      </li>
     </ol>
   </section>
   </main>
@@ -644,14 +730,28 @@
   for (const timeline of document.querySelectorAll(".timeline")) {
     const records = [...timeline.querySelectorAll(".record-shell")];
     const count = timeline.querySelector("[data-visible-count]");
+    const search = timeline.querySelector("[data-record-search]");
+    const source = timeline.querySelector("[data-source-filter]");
+    let activeLane = "all";
+    const applyFilters = () => {
+      const query = search.value.trim().toLowerCase();
+      for (const record of records) {
+        const laneMatch = activeLane === "all" || record.dataset.lanes.split(" ").includes(activeLane);
+        const sourceMatch = source.value === "all" || record.dataset.sourceTypes.split(" ").includes(source.value);
+        const textMatch = !query || record.dataset.search.includes(query);
+        record.hidden = !(laneMatch && sourceMatch && textMatch);
+      }
+      count.textContent = records.filter((record) => !record.hidden).length;
+    };
     for (const button of timeline.querySelectorAll(".lane-filter")) {
       button.addEventListener("click", () => {
-        const lane = button.dataset.lane;
+        activeLane = button.dataset.lane;
         for (const filter of timeline.querySelectorAll(".lane-filter")) filter.classList.toggle("active", filter === button);
-        for (const record of records) record.hidden = lane !== "all" && !record.dataset.lanes.split(" ").includes(lane);
-        count.textContent = records.filter((record) => !record.hidden).length;
+        applyFilters();
       });
     }
+    search.addEventListener("input", applyFilters);
+    source.addEventListener("change", applyFilters);
   }
 </script>
 </html>

@@ -31,9 +31,22 @@ const timelineMarkup = timelines.map((timeline) => `
     <nav class="lane-filters" aria-label="Timeline views">
       ${["all", "chronology", "capability", "product", "frontier_voices", "social_transition", "disputes"].map((lane) => `<button class="lane-filter${lane === "all" ? " active" : ""}" type="button" data-lane="${lane}">${escapeHtml(label(lane))}</button>`).join("")}
     </nav>
+    <div class="search-tools">
+      <label>
+        <span>Search records</span>
+        <input type="search" placeholder="Search titles, summaries, and notes" data-record-search>
+      </label>
+      <label>
+        <span>Source type</span>
+        <select data-source-filter>
+          <option value="all">all sources</option>
+          ${[...new Set(timeline.events.flatMap((event) => event.sources.map((source) => source.type)))].sort().map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(label(type))}</option>`).join("")}
+        </select>
+      </label>
+    </div>
     <ol class="records">
       ${[...timeline.events].sort((a, b) => a.date.localeCompare(b.date)).map((event) => `
-      <li class="record-shell" data-lanes="${escapeHtml(lanes(event).join(" "))}">
+      <li class="record-shell" data-lanes="${escapeHtml(lanes(event).join(" "))}" data-source-types="${escapeHtml(event.sources.map((source) => source.type).join(" "))}" data-search="${escapeHtml([event.title, event.summary, event.interpretation, event.capability_implication, event.reliability_note, event.social_implication].filter(Boolean).join(" ").toLowerCase())}">
         <article class="record" id="${escapeHtml(event.id)}">
           <header class="record-meta">
             <div>
@@ -96,6 +109,10 @@ const html = `<!doctype html>
     .lane-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 28px; }
     .lane-filter { padding: 7px 10px; border: 1px solid #343431; color: #aaa9a2; background: transparent; cursor: pointer; font: inherit; font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; transition: .2s ease; }
     .lane-filter:hover, .lane-filter.active { border-color: #d4d4ce; color: #f4f4f0; background: #171716; }
+    .search-tools { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 260px); gap: 12px; margin: 0 0 28px; }
+    .search-tools label { display: grid; gap: 7px; color: #989890; font-size: .65rem; letter-spacing: .1em; text-transform: uppercase; }
+    .search-tools input, .search-tools select { min-height: 38px; padding: 8px 10px; border: 1px solid #343431; border-radius: 0; color: #e8e8e3; background: #0d0d0d; font: inherit; font-size: .82rem; letter-spacing: 0; outline: none; text-transform: none; }
+    .search-tools input:focus, .search-tools select:focus { border-color: #d4d4ce; }
     .records { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
     .record-shell[hidden] { display: none; }
     .record { min-height: 208px; padding: 24px 26px 22px; border: 1px solid #2b2b29; background: #0d0d0d; transition: border-color .2s ease, background .2s ease; }
@@ -138,6 +155,7 @@ const html = `<!doctype html>
       .record-footer { display: block; }
       .labels { justify-content: flex-start; margin-top: 20px; }
       .detail-grid { grid-template-columns: 1fr; gap: 16px; }
+      .search-tools { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -155,14 +173,28 @@ const html = `<!doctype html>
   for (const timeline of document.querySelectorAll(".timeline")) {
     const records = [...timeline.querySelectorAll(".record-shell")];
     const count = timeline.querySelector("[data-visible-count]");
+    const search = timeline.querySelector("[data-record-search]");
+    const source = timeline.querySelector("[data-source-filter]");
+    let activeLane = "all";
+    const applyFilters = () => {
+      const query = search.value.trim().toLowerCase();
+      for (const record of records) {
+        const laneMatch = activeLane === "all" || record.dataset.lanes.split(" ").includes(activeLane);
+        const sourceMatch = source.value === "all" || record.dataset.sourceTypes.split(" ").includes(source.value);
+        const textMatch = !query || record.dataset.search.includes(query);
+        record.hidden = !(laneMatch && sourceMatch && textMatch);
+      }
+      count.textContent = records.filter((record) => !record.hidden).length;
+    };
     for (const button of timeline.querySelectorAll(".lane-filter")) {
       button.addEventListener("click", () => {
-        const lane = button.dataset.lane;
+        activeLane = button.dataset.lane;
         for (const filter of timeline.querySelectorAll(".lane-filter")) filter.classList.toggle("active", filter === button);
-        for (const record of records) record.hidden = lane !== "all" && !record.dataset.lanes.split(" ").includes(lane);
-        count.textContent = records.filter((record) => !record.hidden).length;
+        applyFilters();
       });
     }
+    search.addEventListener("input", applyFilters);
+    source.addEventListener("change", applyFilters);
   }
 </script>
 </html>`;

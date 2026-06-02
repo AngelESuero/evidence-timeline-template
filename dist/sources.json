@@ -2,6 +2,22 @@
   "generated_at": "2026-06-01T00:00:00.000Z",
   "sources": [
     {
+      "url": "https://openai.com/index/chatgpt-agent-system-card/",
+      "title": "ChatGPT agent System Card",
+      "publisher": "OpenAI",
+      "type": "official_system_card",
+      "published": "2025-07-17",
+      "accessed": "2026-06-01",
+      "claim_scope": "ChatGPT agent safety evaluation and safeguards",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-agent-introduced"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/blog/chatgpt-plugins",
       "title": "ChatGPT plugins",
       "publisher": "OpenAI",
@@ -42,6 +58,22 @@
       ]
     },
     {
+      "url": "https://openai.com/index/gpt-5-system-card/",
+      "title": "GPT-5 System Card",
+      "publisher": "OpenAI",
+      "type": "official_system_card",
+      "published": "2025-08-07",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-5 evaluation and safety documentation",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-introduced"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/chatgpt/",
       "title": "Introducing ChatGPT",
       "publisher": "OpenAI",
@@ -51,6 +83,22 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "chatgpt-public-launch"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "title": "Introducing ChatGPT agent: bridging research and action",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-07-17",
+      "accessed": "2026-06-01",
+      "claim_scope": "ChatGPT agent launch and unified agentic-system description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "chatgpt-agent-introduced"
         }
       ]
     },
@@ -125,6 +173,22 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "gpt-4o-announced"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-5/",
+      "title": "Introducing GPT-5",
+      "publisher": "OpenAI",
+      "type": "official_announcement",
+      "published": "2025-08-07",
+      "accessed": "2026-06-01",
+      "claim_scope": "GPT-5 launch and unified-system description",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "gpt-5-introduced"
         }
       ]
     },
