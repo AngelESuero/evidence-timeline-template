@@ -3,7 +3,7 @@
   "mode": "metadata_audit",
   "note": "This report audits stored source metadata. It does not claim to perform a live HTTP availability check.",
   "summary": {
-    "live": 34,
+    "live": 36,
     "archived": 1,
     "missing": 0,
     "context_dependent": 0

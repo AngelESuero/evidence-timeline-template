@@ -467,6 +467,43 @@
       ]
     },
     {
+      "url": "https://openai.com/index/our-principles/",
+      "title": "Our principles",
+      "publisher": "OpenAI",
+      "type": "frontier_voice_post",
+      "published": "2026-04-26",
+      "accessed": "2026-06-01",
+      "author_or_speaker": "Sam Altman",
+      "claim_scope": "Sam Altman statement on OpenAI operating principles, access, agency, safety, and transparency",
+      "consent_status": "public",
+      "archive_status": "live",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "our-principles-sam-altman"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/planning-for-agi-and-beyond/",
+      "title": "Planning for AGI and beyond",
+      "publisher": "OpenAI",
+      "type": "frontier_voice_post",
+      "published": "2023-02-24",
+      "accessed": "2026-06-01",
+      "author_or_speaker": "OpenAI",
+      "claim_scope": "OpenAI statement on AGI planning, deployment, alignment, and public benefit",
+      "consent_status": "public",
+      "archive_status": "live",
+      "note": "The official page states that its structural information was outdated as of October 28, 2025.",
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "agi-planning-statement"
+        }
+      ]
+    },
+    {
       "url": "https://openai.com/index/sharing-the-latest-model-spec/",
       "title": "Sharing the latest Model Spec",
       "publisher": "OpenAI",

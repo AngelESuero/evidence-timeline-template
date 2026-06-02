@@ -202,6 +202,48 @@
           "year": "2023",
           "events": [
             {
+              "id": "agi-planning-statement",
+              "date": "2023-02-24",
+              "date_precision": "day",
+              "title": "OpenAI publishes its AGI planning statement",
+              "summary": "OpenAI published a statement describing its approach to AGI development, deployment, alignment research, and public benefit.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "frontier_voices",
+                "social_transition",
+                "disputes"
+              ],
+              "interpretation": "This record preserves an attributable institutional voice about AGI planning. It is evidence of OpenAI’s stated position at the time, not proof that predictions or commitments will be realized.",
+              "capability_implication": null,
+              "reliability_note": "The source itself includes a later notice that some structural information became outdated.",
+              "social_implication": "The statement frames AGI as a societal transition involving abundance, economic change, scientific discovery, and governance choices.",
+              "related_events": [
+                "instructgpt-method-published",
+                "gpt-4-announced"
+              ],
+              "open_questions": [
+                "Which stated assumptions changed as OpenAI’s structure and deployment strategy evolved?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/planning-for-agi-and-beyond/",
+                  "title": "Planning for AGI and beyond",
+                  "publisher": "OpenAI",
+                  "type": "frontier_voice_post",
+                  "published": "2023-02-24",
+                  "accessed": "2026-06-01",
+                  "author_or_speaker": "OpenAI",
+                  "claim_scope": "OpenAI statement on AGI planning, deployment, alignment, and public benefit",
+                  "consent_status": "public",
+                  "archive_status": "live",
+                  "note": "The official page states that its structural information was outdated as of October 28, 2025."
+                }
+              ]
+            },
+            {
               "id": "gpt-4-announced",
               "date": "2023-03-14",
               "date_precision": "day",
@@ -1064,6 +1106,53 @@
                   "published": "2025-09-15",
                   "accessed": "2026-06-01",
                   "claim_scope": "GPT-5-Codex evaluation addendum",
+                  "archive_status": "live"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "events": [
+            {
+              "id": "our-principles-sam-altman",
+              "date": "2026-04-26",
+              "date_precision": "day",
+              "title": "Sam Altman publishes OpenAI operating principles",
+              "summary": "Sam Altman published a statement describing principles around broad access to AI, individual agency, safety, transparency, and the distribution of power.",
+              "evidence_status": "verified",
+              "confidence": "high",
+              "record_type": "public_statement",
+              "timeline_lanes": [
+                "chronology",
+                "frontier_voices",
+                "social_transition",
+                "disputes"
+              ],
+              "interpretation": "This record captures an attributable executive statement about OpenAI’s current principles. It should be compared with observed decisions and later revisions rather than treated as an unquestionable account.",
+              "capability_implication": null,
+              "reliability_note": null,
+              "social_implication": "The statement explicitly addresses who should hold power as AI capabilities increase and argues for broad access and individual agency.",
+              "related_events": [
+                "agi-planning-statement",
+                "model-spec-updated",
+                "gpt-5-introduced"
+              ],
+              "open_questions": [
+                "How will changes to operating principles be documented and compared with later deployment decisions?"
+              ],
+              "sources": [
+                {
+                  "url": "https://openai.com/index/our-principles/",
+                  "title": "Our principles",
+                  "publisher": "OpenAI",
+                  "type": "frontier_voice_post",
+                  "published": "2026-04-26",
+                  "accessed": "2026-06-01",
+                  "author_or_speaker": "Sam Altman",
+                  "claim_scope": "Sam Altman statement on OpenAI operating principles, access, agency, safety, and transparency",
+                  "consent_status": "public",
                   "archive_status": "live"
                 }
               ]

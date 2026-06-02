@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-06-02T00:52:04.696Z",
+  "checked_at": "2026-06-02T00:54:59.229Z",
   "mode": "live_http_audit",
   "note": "This report records a bounded live HTTP check. A reachable URL does not prove that its content still supports the cited claim.",
   "timeout_ms": 10000,
   "concurrency": 4,
   "summary": {
-    "reachable": 35,
+    "reachable": 37,
     "http_error": 0,
     "timeout": 0,
     "network_error": 0
@@ -428,6 +428,34 @@
         {
           "timeline_id": "openai-seed",
           "event_id": "operator-research-preview"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/our-principles/",
+      "final_url": "https://openai.com/index/our-principles/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "our-principles-sam-altman"
+        }
+      ]
+    },
+    {
+      "url": "https://openai.com/index/planning-for-agi-and-beyond/",
+      "final_url": "https://openai.com/index/planning-for-agi-and-beyond/",
+      "status": 200,
+      "ok": true,
+      "classification": "reachable",
+      "redirected": false,
+      "references": [
+        {
+          "timeline_id": "openai-seed",
+          "event_id": "agi-planning-statement"
         }
       ]
     },
